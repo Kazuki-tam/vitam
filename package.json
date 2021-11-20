@@ -1,0 +1,28 @@
+{
+  "name": "vitam",
+  "version": "0.0.1",
+  "description": "VITAM is a front-end template with Vite for static websites.",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "checkTypes": "tsc --noEmit",
+    "postInstall": "typesync",
+    "textLint": "textlint *.md",
+    "textLint:fix": "textlint --fix *.md"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.9",
+    "@types/sass": "^1.43.0",
+    "sass": "^1.43.4",
+    "textlint": "^12.0.2",
+    "textlint-rule-ginger": "^2.2.1",
+    "textlint-rule-no-dead-link": "^4.8.0",
+    "textlint-rule-write-good": "^2.0.0",
+    "typescript": "^4.3.2",
+    "typesync": "^0.8.0",
+    "vite": "^2.6.4",
+    "vite-plugin-html": "^2.1.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "filters": {},
+  "rules": {
+    "ginger": true,
+    "no-dead-link": true,
+    "write-good": true
+  }
+}
