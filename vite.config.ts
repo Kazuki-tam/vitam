@@ -1,28 +1,28 @@
 import { defineConfig } from 'vite';
-import { minifyHtml, injectHtml } from 'vite-plugin-html';
+import handlebars from 'vite-plugin-handlebars';
 import { resolve } from 'path';
+import { siteData, pagesData } from './site.config';
 
-const root = 'src';
 export default defineConfig({
   server: {
     open: true
   },
-  root: root,
+  root: siteData.root,
   build: {
     outDir: '../dist',
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, root, 'index.html'),
-        sample: resolve(__dirname, root, 'sample/index.html')
+        main: resolve(__dirname, siteData.root, 'index.html'),
+        sample: resolve(__dirname, siteData.root, 'sample/index.html')
       }
     }
   },
   plugins: [
-    minifyHtml(),
-    injectHtml({
-      data: {
-        title: 'VITAM開発環境サイト',
+    handlebars({
+      partialDirectory: resolve(__dirname, siteData.root, '_partials'),
+      context(pagePath) {
+        return pagesData[pagePath];
       },
     }),
   ],
