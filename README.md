@@ -1,6 +1,6 @@
 # VITAM
 
-VITAM is a front-end starter template with `Vite` for static websites.
+VITAM is a starter template with 'Vite' for front-end developers. This template focuses on building a static website.
 This template suits small to medium projects like a landing page and a corporate website.
 
 ## Status
@@ -23,11 +23,17 @@ This template suits small to medium projects like a landing page and a corporate
 
 ## Requirements
 
-- Node v16+ (16.13.0)
+- [Node v16+ (16.13.0)](https://nodejs.org/en/)
+
+## Dependencies
+
+- [Yarn](https://yarnpkg.com/)
+- [ESLint](https://eslint.org/)
+- [Vite](https://vitejs.dev/)
 
 ## Recommended IDE
 
-- Visual Studio Code
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Notes
 
