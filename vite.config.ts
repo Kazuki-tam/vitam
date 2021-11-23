@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
 import { resolve } from 'path';
 import { siteData, pagesData } from './site.config';
+import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 export default defineConfig({
   server: {
@@ -19,6 +20,7 @@ export default defineConfig({
     }
   },
   plugins: [
+    svelte(),
     handlebars({
       partialDirectory: resolve(__dirname, siteData.root, '_partials'),
       context(pagePath) {

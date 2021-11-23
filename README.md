@@ -5,8 +5,8 @@ This template suits small to medium projects like a landing page and a corporate
 
 ## Features
 
-- Less code and easier to understand than other modern templates such as projects based on React and Vue.
-- Get notification about TypeScripts error and warnings through ESLint
+- Less code and easier to understand than other modern templates.
+- Errors and warnings are displayed through ESLint
 - Fast Hot Module Replacement with Vite
 - Breaking HTML smaller files with a simple template engine
 - Quick local server starts

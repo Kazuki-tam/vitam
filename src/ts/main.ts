@@ -1,8 +1,10 @@
-import '/scss/style.scss'
+import '/scss/style.scss';
+import App from './App.svelte';
 
-const app = document.querySelector<HTMLDivElement>('#app')!
+const targetElement = document.getElementById('app');
+const app = new App({
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  target: targetElement!
+});
 
-app.innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+export default app;
