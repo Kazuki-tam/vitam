@@ -1,0 +1,8 @@
+{
+  "map": false,
+  "plugins": {
+    "postcss-plugin": {
+      "autoprefixer": { "grid": "autoplace" }
+    }
+  }
+}

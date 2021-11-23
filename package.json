@@ -3,18 +3,19 @@
   "version": "0.0.1",
   "description": "VITAM is a front-end template with Vite for static websites.",
   "scripts": {
-    "start": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview",
     "postInstall": "typesync",
     "textLint": "textlint *.md",
     "textLint:fix": "textlint --fix *.md",
+    "htmlValidate": "html-validate 'dist/**/*.html'",
     "format": "prettier --write --plugin-search-dir=. ./**/*.svelte",
     "eslint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "eslint:fix": "eslint --fix 'src/**/*.{js,ts,svelte}'",
     "checkTypes": "tsc --noEmit",
     "lint": "npm-run-all eslint checkTypes",
-    "lint:fix": "npm-run-all eslint:fix checkTypes"
+    "lint:fix": "npm-run-all eslint:fix checkTypes",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
   },
   "license": "MIT",
   "devDependencies": {
@@ -24,10 +25,14 @@
     "@types/sass": "^1.43.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
+    "autoprefixer": "^10.4.0",
     "eslint": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.1",
+    "html-validate": "^6.1.3",
     "license-checker": "^25.0.1",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.11",
+    "postcss-plugin": "^1.0.0",
     "prettier": "^2.4.1",
     "prettier-plugin-svelte": "^2.5.0",
     "sass": "^1.43.4",
@@ -42,6 +47,7 @@
     "typescript": "^4.3.2",
     "typesync": "^0.8.0",
     "vite": "^2.6.4",
-    "vite-plugin-handlebars": "^1.6.0"
+    "vite-plugin-handlebars": "^1.6.0",
+    "vite-plugin-imagemin": "^0.4.6"
   }
 }
