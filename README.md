@@ -1,7 +1,6 @@
 # VITAM
 
-VITAM is a starter template with 'Vite' for front-end developers. This template focuses on building a static website.
-This template suits small to medium projects like a landing page and a corporate website.
+VITAM is a starter template with Vite for front-end developers. This template focuses on building a static website and suits small to medium projects like a landing page and a corporate website.
 
 ## Status
 
@@ -14,10 +13,10 @@ This template suits small to medium projects like a landing page and a corporate
 ## Features
 
 - Less code and easier to understand than other modern templates.
-- Lint TypeScript and Svelete with ['ESLint'](https://eslint.org/)
-- HTML Validation with ['HTML-validate'](https://html-validate.org/)
-- Fast Hot Module Replacement with ['Vite'](https://vitejs.dev/)
-- Breaking HTML smaller files with ['Handlebars'](https://handlebarsjs.com/)
+- Lint TypeScript and Svelete with [ESLint](https://eslint.org/)
+- HTML Validation with [HTML-validate](https://html-validate.org/)
+- Fast Hot Module Replacement with [Vite](https://vitejs.dev/)
+- Breaking HTML smaller files with [Handlebars](https://handlebarsjs.com/)
 - Quick local server starts
 - Compressing image assets
 
