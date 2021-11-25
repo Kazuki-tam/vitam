@@ -21,7 +21,11 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
     "@tsconfig/svelte": "^2.0.1",
+    "@types/eslint": "^8.2.0",
+    "@types/license-checker": "^25.0.3",
+    "@types/micromodal": "^0.3.3",
     "@types/node": "^16.11.9",
+    "@types/prettier": "^2.4.2",
     "@types/sass": "^1.43.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
@@ -49,5 +53,9 @@
     "vite": "^2.6.4",
     "vite-plugin-handlebars": "^1.6.0",
     "vite-plugin-imagemin": "^0.4.6"
+  },
+  "dependencies": {
+    "micromodal": "^0.4.9",
+    "swiper": "^7.3.1"
   }
 }

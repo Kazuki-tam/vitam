@@ -1,6 +1,6 @@
 # VITAM
 
-VITAM is a starter template with Vite for front-end developers. This template focuses on building a static website and suits small to medium projects like a landing page and a corporate website.
+VITAM is a starter template with Vite for front-end projects. This template focuses on building a static website and suits small to medium projects like a landing page and a corporate website.
 
 ## Status
 
@@ -12,23 +12,71 @@ VITAM is a starter template with Vite for front-end developers. This template fo
 
 ## Features
 
-- Less code and easier to understand than other modern templates.
 - Lint TypeScript and Svelete with [ESLint](https://eslint.org/)
 - HTML Validation with [HTML-validate](https://html-validate.org/)
 - Fast Hot Module Replacement with [Vite](https://vitejs.dev/)
 - Breaking HTML smaller files with [Handlebars](https://handlebarsjs.com/)
 - Quick local server starts
 - Compressing image assets
+- Out of the box useful JavaScript libraries
+
+## Libraries
+
+- Slider: [Swiper](https://swiperjs.com/)
+- Modal: [Micromodal.js](https://micromodal.vercel.app/)
+
+## How to use
+
+Clone this repository and install dependencies
+
+```
+yarn install
+```
+
+## Available Commands
+
+Start your project in development mode
+
+```
+yarn start
+```
+
+Build your project for production
+
+```
+yarn build
+```
+
+Locally preview production build
+
+```
+yarn serve
+```
+
+Lint your TypeScript files
+
+```
+yarn lint
+```
+
+Fix your TypeScript files
+
+```
+yarn lint:fix
+```
 
 ## Requirements
 
 - [Node v16+ (16.13.0)](https://nodejs.org/en/)
 
-## Dependencies
+## Main Dependencies
 
 - [Yarn](https://yarnpkg.com/)
 - [ESLint](https://eslint.org/)
 - [Vite](https://vitejs.dev/)
+- [Handlebars](https://handlebarsjs.com/)
+- [HTML-validate](https://html-validate.org/)
+- [Sass](https://sass-lang.com/)
 
 ## Recommended IDE
 
