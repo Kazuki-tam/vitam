@@ -55,7 +55,10 @@
     "vite-plugin-imagemin": "^0.4.6"
   },
   "dependencies": {
+    "install": "^0.13.0",
     "micromodal": "^0.4.9",
-    "swiper": "^7.3.1"
+    "style-loader": "^3.3.1",
+    "swiper": "^7.3.1",
+    "yarn": "^1.22.17"
   }
 }

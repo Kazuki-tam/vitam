@@ -1,4 +1,4 @@
-import '/scss/style.scss';
+import '/scss/common.scss';
 import App from './App.svelte';
 import MicroModal from 'micromodal';
 MicroModal.init();

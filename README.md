@@ -12,20 +12,21 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 
 ## Features
 
-- Lint TypeScript and Svelete with [ESLint](https://eslint.org/)
+- Lint TypeScript and Svelte with [ESLint](https://eslint.org/)
 - HTML Validation with [HTML-validate](https://html-validate.org/)
 - Fast Hot Module Replacement with [Vite](https://vitejs.dev/)
 - Breaking HTML smaller files with [Handlebars](https://handlebarsjs.com/)
 - Quick local server starts
 - Compressing image assets
 - Out of the box useful JavaScript libraries
+- Based on [Enduring CSS](https://ecss.benfrain.com/) that is one of the most useful CSS architecture
 
 ## Libraries
 
 - Slider: [Swiper](https://swiperjs.com/)
 - Modal: [Micromodal.js](https://micromodal.vercel.app/)
 
-## How to use
+## How to Use
 
 Clone this repository and install dependencies
 
@@ -77,6 +78,32 @@ yarn lint:fix
 - [Handlebars](https://handlebarsjs.com/)
 - [HTML-validate](https://html-validate.org/)
 - [Sass](https://sass-lang.com/)
+
+## CSS Architecture
+
+This starter template gives you [Enduring CSS](https://ecss.benfrain.com/) standardly, but it's not necessary architecture in all projects.
+I recommend you introduce the best architecture in each project.
+
+[CSS Architecture](https://philipwalton.com/articles/css-architecture/)
+
+### What's Enduring CSS?
+
+Enduring CSS is an architecture to write style sheets for large-scale, rapidly changing, long-lived web projects.
+You can get these bellow benefits from Enduring CSS.
+
+- Isolated, self-quarantining styles
+- Scale to any size
+- Avoiding abstraction and specificity
+- One key selector to rule them all
+- Handling state
+
+### How to write Enduring CSS selectors
+
+Here is the example selector.
+
+```
+.namespace-Component_ChildNode
+```
 
 ## Recommended IDE
 
