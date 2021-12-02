@@ -2,7 +2,10 @@
   "map": false,
   "plugins": {
     "postcss-plugin": {
-      "autoprefixer": { "grid": "autoplace" }
-    }
+      "autoprefixer": { "grid": "autoplace" },
+      "css-declaration-sorter": { "order": "alphabetical" }
+    },
+    "postcss-flexbugs-fixes": true,
+    "postcss-combine-media-query": true
   }
 }
