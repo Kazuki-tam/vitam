@@ -3,6 +3,7 @@ const siteData = {
   root: 'src',
   locale: 'en',
   siteName: 'VITAM Docs',
+  shortName: 'VITAM',
   description: 'VITAM is a front-end template with Vite for static websites.',
   url: 'https://vitam.pages.dev/',
   ogpImage: 'ogp.jpg',
@@ -10,7 +11,9 @@ const siteData = {
   fbAppId: '',
   fbAdmins: '',
   twitterCard: 'summary_large_image',
-  twitterSite: '@SiteAccount'
+  twitterSite: '@SiteAccount',
+  themeColor: '#FFA800',
+  backgroundColor: '#fff'
 }
 
 // Page Infomation

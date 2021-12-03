@@ -15,6 +15,7 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 - Fast HMR with [Vite](https://vitejs.dev/)
 - Breaking HTML smaller files with [Handlebars](https://handlebarsjs.com/)
 - PWA support
+- No virtual DOM
 - Quick local server starts
 - Compressing image assets
 - Out of the box useful JavaScript libraries
@@ -115,6 +116,10 @@ Here is the example selector.
 ## Notes
 
 This starter template doesn't support Internet Explorer.
+
+## Contributes
+
+Pull request are always welcome.
 
 ## License
 

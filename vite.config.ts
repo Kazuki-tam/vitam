@@ -22,7 +22,40 @@ export default defineConfig({
     }
   },
   plugins: [
-    VitePWA(),
+    VitePWA({
+      manifest: {
+        "theme_color": siteData.themeColor,
+        "background_color": siteData.themeColor,
+        "display": "browser",
+        "scope": "/",
+        "start_url": "/",
+        "name": siteData.siteName,
+        "short_name": siteData.shortName,
+        "description": siteData.description,
+        "icons": [
+          {
+            "src": "/pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "/pwa-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+          },
+          {
+            "src": "/pwa-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+          },
+          {
+            "src": "/pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          }
+        ]
+      }
+    }),
     viteImagemin({
       gifsicle: {
         optimizationLevel: 7,
