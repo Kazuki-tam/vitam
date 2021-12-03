@@ -12,20 +12,22 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 
 ## Features
 
-- Fast Hot Module Replacement with [Vite](https://vitejs.dev/)
+- Fast HMR with [Vite](https://vitejs.dev/)
 - Breaking HTML smaller files with [Handlebars](https://handlebarsjs.com/)
+- PWA support
 - Quick local server starts
 - Compressing image assets
 - Out of the box useful JavaScript libraries
 - Based on [Enduring CSS](https://ecss.benfrain.com/) that is one of the most useful CSS architecture
 - Lint TypeScript and Svelte with [ESLint](https://eslint.org/)
 - HTML Validation with [HTML-validate](https://html-validate.org/)
-- Transforming styles with PostCSS plugins
+- Transforming styles with [PostCSS](https://postcss.org/)
 
 ## Libraries
 
 - Slider: [Swiper](https://swiperjs.com/)
 - Modal: [Micromodal.js](https://micromodal.vercel.app/)
+- Smooth Scroll: [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 
 ## How to Use
 

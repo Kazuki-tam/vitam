@@ -4,6 +4,7 @@ import { resolve } from 'path';
 import { siteData, pagesData } from './site.config';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import viteImagemin from 'vite-plugin-imagemin';
+import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
   server: {
@@ -21,6 +22,7 @@ export default defineConfig({
     }
   },
   plugins: [
+    VitePWA(),
     viteImagemin({
       gifsicle: {
         optimizationLevel: 7,
