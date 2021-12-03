@@ -4,9 +4,8 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 
 ## Status
 
-<!-- [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/releases/latest) -->
-<!-- [![Issues](https://img.shields.io/github/issues/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/issues) -->
-
+[![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/releases/latest)
+[![Issues](https://img.shields.io/github/issues/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/issues)
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
 ![Release date](https://img.shields.io/github/release-date/Kazuki-tam/vitam)
 
