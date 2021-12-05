@@ -3,10 +3,10 @@
 /* ========================================
   Clear Fix Mixin
   Note: Check out a breakpoints file if you want to modify breakpoints.
-  ex: @include clearFix.clearFix();
+  ex: @include clear-fix.clear-fix();
 ======================================== */
 
-@mixin clearFix() {
+@mixin clear-fix() {
   &::after {
     content: "";
     clear: both;

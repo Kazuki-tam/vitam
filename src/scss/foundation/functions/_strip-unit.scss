@@ -9,8 +9,8 @@
   ex: stripUnit(100px); -> 100
 ======================================== */
 
-@function stripUnit($number) {
-  @if type-of($number)=='number'and not unitless($number) {
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
     @return math.div($number, $number * 0 + 1);
   }
 

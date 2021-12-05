@@ -11,12 +11,12 @@
   ex: getVw(30px); -> 8vw
 ======================================== */
 
-@function getVw($px, $viewport: 375px) {
-  @if (unit($px) != 'px' or unit($viewport) != 'px') {
+@function get-vw($px, $viewport: 375px) {
+  @if unit($px) != "px" or unit($viewport) != "px" {
     @error 'Argument should be px unit!';
   }
 
-  $vw: math.div(su.stripUnit($px), su.stripUnit($viewport));
+  $vw: math.div(su.stripunit($px), su.stripunit($viewport));
 
   @return $vw;
 }

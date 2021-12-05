@@ -14,27 +14,31 @@
 
 :root {
   // Canvas Color
-  --colorCanvasPrimary: color.colorCanvasPrimary;
-  --colorCanvasInverted: color.colorCanvasInverted;
+  --color-canvas-primary: color.color-canvas-primary;
+  --color-canvas-inverted: color.color-canvas-inverted;
+
   // Brand Color
-  --colorBrandPrimary: color.colorBrandPrimary;
-  --colorBrandSecondary: color.colorBrandSecondary;
-  --colorBrandTertiary: color.colorBrandTertiary;
+  --color-brand-primary: color.color-brand-primary;
+  --color-brand-secondary: color.color-brand-secondary;
+  --color-brand-tertiary: color.color-brand-tertiary;
+
   // Text Color
-  --colorTextPrimary: color.colorTextPrimary;
-  --colorTextSecondary: color.colorTextSecondary;
-  --colorTextTertiary: color.colorTextTertiary;
-  --colorTextInverted: color.colorTextInverted;
-  --colorTextLink: color.colorTextLink;
-  --colorTextWarn: color.colorTextWarn;
-  --colorTextDanger: color.colorTextDanger;
+  --color-text-primary: color.color-text-primary;
+  --color-text-secondary: color.color-text-secondary;
+  --color-text-tertiary: color.color-text-tertiary;
+  --color-text-inverted: color.color-text-inverted;
+  --color-text-link: color.color-text-link;
+  --color-text-ok: color.color-text-ok;
+  --color-text-warn: color.color-text-warn;
+  --color-text-danger: color.color-text-danger;
+
   // UI Color
-  --colorUiPrimary: color.colorUiPrimary;
-  --colorUiSecondary: color.colorUiSecondary;
-  --colorUiTertiary: color.colorUiTertiary;
-  --colorUiOk: color.colorUiOk;
-  --colorUiWarn: color.colorUiWarn;
-  --colorUiDanger: color.colorUiDanger;
+  --color-ui-primary: color.color-ui-primary;
+  --color-ui-secondary: color.color-ui-secondary;
+  --color-ui-tertiary: color.color-ui-tertiary;
+  --color-ui-ok: color.color-ui-ok;
+  --color-ui-warn: color.color-ui-warn;
+  --color-ui-danger: color.color-ui-danger;
 }
 
 html {
@@ -49,30 +53,30 @@ html {
 }
 
 body {
-  min-width: 320px;
   min-height: 100%;
+  min-width: 320px;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  font-size: font.$fontSizePrimary;
-  font-family: font.$fontFamilyPrimary;
+  font-family: font.$font-family-primary;
+  font-size: font.$font-size-primary;
   line-height: 1.6;
   font-feature-settings: "palt";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 a {
   text-decoration: none;
-  cursor: pointer;
   color: inherit;
+  cursor: pointer;
 }
 
 button {
+  padding: 0;
+  border-width: 0;
   background-color: transparent;
   color: inherit;
-  border-width: 0;
-  padding: 0;
   cursor: pointer;
 }
 
@@ -81,9 +85,9 @@ figure {
 }
 
 input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 ul,
@@ -114,9 +118,9 @@ cite {
 }
 
 fieldset {
-  border-width: 0;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  border-width: 0;
 }
 
 label {

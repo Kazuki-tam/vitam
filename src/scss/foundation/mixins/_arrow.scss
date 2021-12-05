@@ -12,7 +12,9 @@
 ======================================== */
 
 @mixin arrow($direction, $width, $height, $border, $color: currentColor) {
-  @if not index(upward rightward downward leftward upperLeft upperRight lowerRight lowerLeft, $direction) {
+  @if not
+    index(upward rightward downward leftward upperLeft upperRight lowerRight lowerLeft, $direction)
+  {
     @error "Index the direction of triangle () from 'upward,'rightward','downward','leftward','upperLeft','upperRight','lowerRight','lowerLeft'";
   }
 
@@ -20,42 +22,28 @@
   height: $height;
   border: $border solid;
 
-  @if ($direction==upward) {
+  @if $direction == upward {
     border-color: $color $color transparent transparent;
     transform: rotate(-45deg);
-  }
-
-  @else if ($direction==rightward) {
+  } @else if $direction == rightward {
     border-color: $color $color transparent transparent;
     transform: rotate(45deg);
-  }
-
-  @else if ($direction==downward) {
+  } @else if $direction == downward {
     border-color: transparent transparent $color $color;
     transform: rotate(-45deg);
-  }
-
-  @else if ($direction==leftward) {
+  } @else if $direction == leftward {
     border-color: transparent transparent $color $color;
     transform: rotate(45deg);
-  }
-
-  @else if ($direction==upperLeft) {
+  } @else if $direction == upperLeft {
     border-color: transparent transparent $color $color;
     transform: rotate(67.5deg);
-  }
-
-  @else if ($direction==upperRight) {
+  } @else if $direction == upperRight {
     border-color: $color $color transparent transparent;
     transform: rotate(22.5deg);
-  }
-
-  @else if ($direction==lowerRight) {
-   border-color: $color $color transparent transparent;
-   transform: rotate(67.5deg);
-  }
-
-  @else if ($direction==lowerLeft) {
+  } @else if $direction == lowerRight {
+    border-color: $color $color transparent transparent;
+    transform: rotate(67.5deg);
+  } @else if $direction == lowerLeft {
     border-color: transparent transparent $color $color;
     transform: rotate(22.5deg);
   }

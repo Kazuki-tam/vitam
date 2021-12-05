@@ -4,36 +4,32 @@
   Color Variables
 ======================================== */
 // Canvas Color Variables
-// ex: color: $colorCanvasPrimary;
 // --------------------------------------------------
-$colorCanvasPrimary: #fff !default;
-$colorCanvasInverted: #333 !default;
+$color-canvas-primary: #fff !default;
+$color-canvas-inverted: #333 !default;
 
 // Brand Color Variables
-// ex: color: $colorBrandPrimary;
 // --------------------------------------------------
-$colorBrandPrimary: #ffa800 !default;
-$colorBrandSecondary: #ffc635 !default;
-$colorBrandTertiary: #ff6B00 !default;
+$color-brand-primary: #ffa800 !default;
+$color-brand-secondary: #ffc635 !default;
+$color-brand-tertiary: #ff6b00 !default;
 
 // Text Color Variables
-// ex: color: $colorTextPrimary;
 // --------------------------------------------------
-$colorTextPrimary: #333 !default;
-$colorTextSecondary: #ccc !default;
-$colorTextTertiary: #ff6B00 !default;
-$colorTextInverted: #fff !default;
-$colorTextLink: #ff6B00 !default;
-$colorTextOk: #00b533 !default;
-$colorTextWarn: #ffb700 !default;
-$colorTextDanger: #ff2600 !default;
+$color-text-primary: #333 !default;
+$color-text-secondary: #ccc !default;
+$color-text-tertiary: #ff6b00 !default;
+$color-text-inverted: #fff !default;
+$color-text-link: #ff6b00 !default;
+$color-text-ok: #00b533 !default;
+$color-text-warn: #ffb700 !default;
+$color-text-danger: #ff2600 !default;
 
 // UI Color Variables
-// ex: color: $colorUiPrimary;
 // --------------------------------------------------
-$colorUiPrimary: #ff6B00 !default;
-$colorUiSecondary: #ffc635 !default;
-$colorUiTertiary: #ffc635 !default;
-$colorUiOk: #00b533 !default;
-$colorUiWarn: #ffb700 !default;
-$colorUiDanger: #ff2600 !default;
+$color-ui-primary: #ff6b00 !default;
+$color-ui-secondary: #ffc635 !default;
+$color-ui-tertiary: #ffc635 !default;
+$color-ui-ok: #00b533 !default;
+$color-ui-warn: #ffb700 !default;
+$color-ui-danger: #ff2600 !default;

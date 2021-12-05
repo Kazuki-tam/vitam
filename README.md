@@ -4,6 +4,8 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 
 ## Status
 
+Notice: This project is still in development.
+
 [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/releases/tag/v0.0.1)
 [![Issues](https://img.shields.io/github/issues/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/issues)
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
@@ -12,24 +14,35 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 ## Features
 
 - Fast HMR with [Vite](https://vitejs.dev/)
-- Breaking HTML smaller files with [Handlebars](https://handlebarsjs.com/)
 - PWA support
 - No virtual DOM
 - Quick local server starts
 - Compressing image assets
+- Breaking HTML smaller files with [Handlebars](https://handlebarsjs.com/)
+- Refer to [Enduring CSS](https://ecss.benfrain.com/)
 - Out of the box useful JavaScript libraries
-- Based on [Enduring CSS](https://ecss.benfrain.com/) that is one of the most useful CSS architecture
+- Out of the box useful SCSS functions and Mixins
 - Lint TypeScript and Svelte with [ESLint](https://eslint.org/)
 - HTML Validation with [HTML-validate](https://html-validate.org/)
 - Transforming styles with [PostCSS](https://postcss.org/)
 
-## Libraries
+## Requirements
+
+- [Node v16+ (16.13.0)](https://nodejs.org/en/)
+
+## Main Dependencies
 
 <!-- textlint-disable -->
 
-- Slider: [Swiper](https://swiperjs.com/)
-- Modal: [Micromodal.js](https://micromodal.vercel.app/)
-- Smooth Scroll: [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+- [Yarn](https://yarnpkg.com/)
+- [ESLint](https://eslint.org/)
+- [HTML-vallidate](https://html-validate.org/)
+- [Prettier](https://prettier.io/)
+- [Vite](https://vitejs.dev/)
+- [Handlebars](https://handlebarsjs.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Sass](https://sass-lang.com/)
+- [Svelte](https://svelte.dev/)
 
 <!-- textlint-enable -->
 
@@ -73,25 +86,11 @@ Fix your TypeScript files
 yarn lint:fix
 ```
 
-## Requirements
+Lint and Fix SCSS files
 
-- [Node v16+ (16.13.0)](https://nodejs.org/en/)
-
-## Main Dependencies
-
-<!-- textlint-disable -->
-
-- [Yarn](https://yarnpkg.com/)
-- [ESLint](https://eslint.org/)
-- [HTML-vallidate](https://html-validate.org/)
-- [Prettier](https://prettier.io/)
-- [Vite](https://vitejs.dev/)
-- [Handlebars](https://handlebarsjs.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Sass](https://sass-lang.com/)
-- [Svelte](https://svelte.dev/)
-
-<!-- textlint-enable -->
+```
+yarn stylelint
+```
 
 ## Sass (Dart Sass)
 
@@ -106,7 +105,6 @@ Check out these files before you get started with your project.
 <!-- textlint-enable -->
 
 [Sass](https://sass-lang.com/)
-[Dart Sass](https://sass-lang.com/dart-sass)
 
 ## CSS Architecture
 
@@ -135,6 +133,16 @@ Here is the example selector.
 .namespace-Component_ChildNode
 ```
 
+## Libraries
+
+<!-- textlint-disable -->
+
+- Slider: [Swiper](https://swiperjs.com/)
+- Modal: [Micromodal.js](https://micromodal.vercel.app/)
+- Smooth Scroll: [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+
+<!-- textlint-enable -->
+
 ## Configurations
 
 <!-- textlint-disable -->
@@ -144,6 +152,7 @@ Here is the example selector.
 - [.eslintrc.json](https://eslint.org/docs/user-guide/configuring/)
 - [.htmlvalidate.json](https://html-validate.org/usage/#configuration)
 - [.postcssrc.json](https://github.com/postcss/postcss-load-config)
+- [.stylelintrc.json](https://stylelint.io/user-guide/configure)
 - [.node-version](https://github.com/nodenv/nodenv)
 - [.textlintrc](https://textlint.github.io/docs/configuring.html)
 - [vite.config.ts](https://vitejs.dev/config/)
@@ -158,7 +167,7 @@ Here is the example selector.
 
 ## Notes
 
-This starter template doesn't support Internet Explorer.
+This starter template doesn't support Internet Explorer. Feel free to use this template.
 
 ## Contributes
 
