@@ -152,6 +152,7 @@ Here is the example selector.
 - [.eslintrc.json](https://eslint.org/docs/user-guide/configuring/)
 - [.htmlvalidate.json](https://html-validate.org/usage/#configuration)
 - [.postcssrc.json](https://github.com/postcss/postcss-load-config)
+- [.stylelintrc.json](https://stylelint.io/user-guide/configure)
 - [.node-version](https://github.com/nodenv/nodenv)
 - [.textlintrc](https://textlint.github.io/docs/configuring.html)
 - [vite.config.ts](https://vitejs.dev/config/)
@@ -166,7 +167,7 @@ Here is the example selector.
 
 ## Notes
 
-This starter template doesn't support Internet Explorer.
+This starter template doesn't support Internet Explorer. Feel free to use this template.
 
 ## Contributes
 
