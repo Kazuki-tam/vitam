@@ -4,11 +4,11 @@ import { resolve } from 'path';
 import { siteData, pagesData } from './site.config';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import viteImagemin from 'vite-plugin-imagemin';
-import { VitePWA } from 'vite-plugin-pwa'
+import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
   server: {
-    open: true
+    open: true,
   },
   root: siteData.root,
   build: {
@@ -17,44 +17,49 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, siteData.root, 'index.html'),
-        sample: resolve(__dirname, siteData.root, 'sample/index.html')
-      }
-    }
+        sample: resolve(__dirname, siteData.root, 'sample/index.html'),
+      },
+    },
   },
   plugins: [
     VitePWA({
+      includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
-        "theme_color": siteData.themeColor,
-        "background_color": siteData.themeColor,
-        "display": "browser",
-        "scope": "/",
-        "start_url": "/",
-        "name": siteData.siteName,
-        "short_name": siteData.shortName,
-        "description": siteData.description,
-        "icons": [
+        theme_color: siteData.themeColor,
+        background_color: siteData.themeColor,
+        display: 'browser',
+        name: siteData.siteName,
+        short_name: siteData.shortName,
+        description: siteData.description,
+        icons: [
           {
-            "src": "/pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
+            src: '/pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
           },
           {
-            "src": "/pwa-256x256.png",
-            "sizes": "256x256",
-            "type": "image/png"
+            src: '/pwa-256x256.png',
+            sizes: '256x256',
+            type: 'image/png',
           },
           {
-            "src": "/pwa-384x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
+            src: '/pwa-384x384.png',
+            sizes: '384x384',
+            type: 'image/png',
           },
           {
-            "src": "/pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          }
-        ]
-      }
+            src: '/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
+      },
     }),
     viteImagemin({
       gifsicle: {
@@ -91,4 +96,4 @@ export default defineConfig({
       },
     }),
   ],
-})
+});
