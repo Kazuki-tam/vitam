@@ -4,7 +4,7 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 
 ## Status
 
-[![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/releases/latest)
+[![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/releases/tag/v0.0.1)
 [![Issues](https://img.shields.io/github/issues/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/issues)
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
 ![Release date](https://img.shields.io/github/release-date/Kazuki-tam/vitam)
@@ -25,9 +25,13 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 
 ## Libraries
 
+<!-- textlint-disable -->
+
 - Slider: [Swiper](https://swiperjs.com/)
 - Modal: [Micromodal.js](https://micromodal.vercel.app/)
 - Smooth Scroll: [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+
+<!-- textlint-enable -->
 
 ## How to Use
 
@@ -75,17 +79,38 @@ yarn lint:fix
 
 ## Main Dependencies
 
+<!-- textlint-disable -->
+
 - [Yarn](https://yarnpkg.com/)
 - [ESLint](https://eslint.org/)
+- [HTML-vallidate](https://html-validate.org/)
+- [Prettier](https://prettier.io/)
 - [Vite](https://vitejs.dev/)
 - [Handlebars](https://handlebarsjs.com/)
-- [HTML-validate](https://html-validate.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
+- [Svelte](https://svelte.dev/)
+
+<!-- textlint-enable -->
+
+## Sass (Dart Sass)
+
+You can manage style sheets logically with Sass. I've already defined some functions and Mixins.
+Check out these files before you get started with your project.
+
+<!-- textlint-disable -->
+
+- `src/scss/foundation/functions/*.scss`
+- `src/scss/foundation/mixins/*.scss`
+
+<!-- textlint-enable -->
+
+[Sass](https://sass-lang.com/)
+[Dart Sass](https://sass-lang.com/dart-sass)
 
 ## CSS Architecture
 
-This starter template gives you CSS architecture which is [Enduring CSS](https://ecss.benfrain.com/) standardly, but it's not necessary architecture in all projects.
-I recommend you introduce the best architecture in each project.
+This starter template gives you CSS architecture which is [Enduring CSS](https://ecss.benfrain.com/) standardly, but it's not necessary architecture in all projects. I recommend you introduce the best architecture in each project.
 
 [CSS Architecture](https://philipwalton.com/articles/css-architecture/)
 
@@ -100,6 +125,8 @@ You can get these bellow benefits from Enduring CSS.
 - One key selector to rule them all
 - Handling state
 
+[Enduring CSS](https://ecss.benfrain.com/)
+
 ### How to write Enduring CSS selectors
 
 Here is the example selector.
@@ -107,6 +134,23 @@ Here is the example selector.
 ```
 .namespace-Component_ChildNode
 ```
+
+## Configurations
+
+<!-- textlint-disable -->
+
+- [.editorconfig](https://editorconfig.org/)
+- [.prettierrc](https://prettier.io/docs/en/configuration.html)
+- [.eslintrc.json](https://eslint.org/docs/user-guide/configuring/)
+- [.htmlvalidate.json](https://html-validate.org/usage/#configuration)
+- [.postcssrc.json](https://github.com/postcss/postcss-load-config)
+- [.node-version](https://github.com/nodenv/nodenv)
+- [.textlintrc](https://textlint.github.io/docs/configuring.html)
+- [vite.config.ts](https://vitejs.dev/config/)
+- [tsconfig.json](https://www.typescriptlang.org/tsconfig)
+- [svelte.config.ts](https://kit.svelte.dev/docs)
+
+<!-- textlint-enable -->
 
 ## Recommended IDE
 
@@ -118,7 +162,7 @@ This starter template doesn't support Internet Explorer.
 
 ## Contributes
 
-Pull request are always welcome.
+Pull requests are always welcome.
 
 ## License
 

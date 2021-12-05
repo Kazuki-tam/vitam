@@ -1,5 +1,19 @@
 {
-  "filters": {},
+  "filters": {
+    "comments": true,
+    "allowlist": {
+      "allow": [
+        "Vite",
+        "Mixins",
+        "js",
+        "ESLint",
+        "PostCSS",
+        "Micromodal",
+        "validate",
+        "rapidly"
+      ]
+    }
+  },
   "rules": {
     "ginger": true,
     "no-dead-link": true,

@@ -48,6 +48,8 @@
     "svelte-check": "^2.2.10",
     "svelte-preprocess": "^4.9.8",
     "textlint": "^12.0.2",
+    "textlint-filter-rule-allowlist": "^4.0.0",
+    "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-ginger": "^2.2.1",
     "textlint-rule-no-dead-link": "^4.8.0",
     "textlint-rule-write-good": "^2.0.0",
