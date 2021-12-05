@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@use "sass:math";
+
+/* ========================================
+  Aspect Ratio Mixin
+  @param {Number} $width - Width
+  @param {Number} $height - Height
+  ex: @include aspectRatio.aspectRatio(16, 9);
+======================================== */
+
+@mixin aspectRatio($width, $height) {
+  @if (not unitless($width) or not unitless($height)) {
+    @error "Argument shouldn't have unit!";
+  }
+
+  position: relative;
+
+  &::before {
+    content: '';
+    float: left;
+    padding-top: math.div($height, $width) * 100%;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  &> :first-child {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

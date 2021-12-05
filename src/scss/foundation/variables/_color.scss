@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* ========================================
+  Color Variables
+======================================== */
+// Canvas Color Variables
+// ex: color: $colorCanvasPrimary;
+// --------------------------------------------------
+$colorCanvasPrimary: #fff !default;
+$colorCanvasInverted: #333 !default;
+
+// Brand Color Variables
+// ex: color: $colorBrandPrimary;
+// --------------------------------------------------
+$colorBrandPrimary: #ffa800 !default;
+$colorBrandSecondary: #ffc635 !default;
+$colorBrandTertiary: #ff6B00 !default;
+
+// Text Color Variables
+// ex: color: $colorTextPrimary;
+// --------------------------------------------------
+$colorTextPrimary: #333 !default;
+$colorTextSecondary: #ccc !default;
+$colorTextTertiary: #ff6B00 !default;
+$colorTextInverted: #fff !default;
+$colorTextLink: #ff6B00 !default;
+$colorTextOk: #00b533 !default;
+$colorTextWarn: #ffb700 !default;
+$colorTextDanger: #ff2600 !default;
+
+// UI Color Variables
+// ex: color: $colorUiPrimary;
+// --------------------------------------------------
+$colorUiPrimary: #ff6B00 !default;
+$colorUiSecondary: #ffc635 !default;
+$colorUiTertiary: #ffc635 !default;
+$colorUiOk: #00b533 !default;
+$colorUiWarn: #ffb700 !default;
+$colorUiDanger: #ff2600 !default;

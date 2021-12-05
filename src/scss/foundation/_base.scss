@@ -1,4 +1,132 @@
 @charset "UTF-8";
+@use "./variables/font";
+@use "./variables/color";
+
 /* ========================================
   Base
+  Note: Difine your base style
 ======================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  // Canvas Color
+  --colorCanvasPrimary: color.colorCanvasPrimary;
+  --colorCanvasInverted: color.colorCanvasInverted;
+  // Brand Color
+  --colorBrandPrimary: color.colorBrandPrimary;
+  --colorBrandSecondary: color.colorBrandSecondary;
+  --colorBrandTertiary: color.colorBrandTertiary;
+  // Text Color
+  --colorTextPrimary: color.colorTextPrimary;
+  --colorTextSecondary: color.colorTextSecondary;
+  --colorTextTertiary: color.colorTextTertiary;
+  --colorTextInverted: color.colorTextInverted;
+  --colorTextLink: color.colorTextLink;
+  --colorTextWarn: color.colorTextWarn;
+  --colorTextDanger: color.colorTextDanger;
+  // UI Color
+  --colorUiPrimary: color.colorUiPrimary;
+  --colorUiSecondary: color.colorUiSecondary;
+  --colorUiTertiary: color.colorUiTertiary;
+  --colorUiOk: color.colorUiOk;
+  --colorUiWarn: color.colorUiWarn;
+  --colorUiDanger: color.colorUiDanger;
+}
+
+html {
+  /*
+  Consider if the 62.5% solution is valuable in this project.
+  You could use getRem function to conver px to rem.
+  */
+  // font-size: 62.5%;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: font.$fontSizePrimary;
+  font-family: font.$fontFamilyPrimary;
+  line-height: 1.6;
+  font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}

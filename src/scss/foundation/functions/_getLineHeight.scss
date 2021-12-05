@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@use "../functions/stripUnit" as su;
+@use "sass:math";
+
+/* ========================================
+  Get Line Hight Function
+  @param {Number} $fontSize - Font size with px
+  @param {Number} $lineFeed - Line feed with no-unit
+  @return {Number} $lineHeight - Line hight
+  ex: getLineHeight(16); -> 1.5
+======================================== */
+
+@function getLineHeight($fontSize: 16px, $lineFeed: 24) {
+  @if (unit($fontSize) !='px') {
+    @error "First argument should be px unit!";
+  }
+
+  @if (not unitless($lineFeed)) {
+    @error "Second argument shouldn't have unit!";
+  }
+
+  $lineHeight: math.div($lineFeed, su.stripUnit($fontSize));
+
+  @return $lineHeight;
+}

@@ -1,5 +1,5 @@
 // Import SCSS
-import '/scss/common.scss';
+import '/scss/site.scss';
 
 // Import Libraries
 import './libs/smoothScroll';

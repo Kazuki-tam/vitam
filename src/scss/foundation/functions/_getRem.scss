@@ -1,0 +1,22 @@
+
+@charset "UTF-8";
+@use "../variables/font";
+@use "../functions/stripUnit" as su;
+
+/* ========================================
+  Get Rem Function
+  @param {Number} $fontSize - Number to convert px to rem
+  @param {Number} $rootFontSize - Number to divite target value by root's font size
+  @return {Number} $rem - Number with rem unit
+  ex: getRem(16px); -> 1rem
+======================================== */
+
+@function getRem($fontSize, $rootFontSize: font.$fontSizePrimary) {
+  @if (unit($fontSize) !='px'or unit($rootFontSize) !='px') {
+    @error "Argument should be px unit!";
+  }
+
+  $rem: (su.stripUnit($fontSize) / su.stripUnit($rootFontSize)) * 1rem;
+
+  @return $rem;
+}
