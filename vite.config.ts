@@ -23,6 +23,7 @@ export default defineConfig({
   },
   plugins: [
     VitePWA({
+      registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
         theme_color: siteData.themeColor,
