@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* ========================================
+  Under Line Mixin
+  @param {Color} $color - Color
+  @param {Number} $height - Gradient height
+  ex: @include underLine.underLine(#ff6B00, 10px);
+======================================== */
+
+@mixin underLine($color, $height) {
+  display: inline;
+  background: linear-gradient(transparent $height, $color 0%);
+}

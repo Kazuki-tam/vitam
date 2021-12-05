@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* ========================================
+  Clear Fix Mixin
+  Note: Check out a breakpoints file if you want to modify breakpoints.
+  ex: @include clearFix.clearFix();
+======================================== */
+
+@mixin clearFix() {
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}

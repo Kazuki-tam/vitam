@@ -84,7 +84,7 @@ yarn lint:fix
 
 ## CSS Architecture
 
-This starter template gives you [Enduring CSS](https://ecss.benfrain.com/) standardly, but it's not necessary architecture in all projects.
+This starter template gives you CSS architecture which is [Enduring CSS](https://ecss.benfrain.com/) standardly, but it's not necessary architecture in all projects.
 I recommend you introduce the best architecture in each project.
 
 [CSS Architecture](https://philipwalton.com/articles/css-architecture/)
