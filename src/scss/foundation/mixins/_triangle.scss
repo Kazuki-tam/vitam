@@ -11,40 +11,42 @@
 ======================================== */
 
 @mixin triangle($direction, $width, $height, $color: currentColor) {
-  @if not index(upward rightward downward leftward upperLeft upperRight lowerRight lowerLeft, $direction) {
+  @if not
+    index(upward rightward downward leftward upperLeft upperRight lowerRight lowerLeft, $direction)
+  {
     @error "Index the direction of triangle () from 'upward,'rightward','downward','leftward','upperLeft','upperRight','lowerRight','lowerLeft'";
   }
 
-  $halfWidth: math.div($width, 2);
-  $halfHeight: math.div($height, 2);
+  $half-width: math.div($width, 2);
+  $half-height: math.div($height, 2);
 
-  height: 0;
   width: 0;
+  height: 0;
   border-style: solid;
 
-  @if ($direction == upward) {
+  @if $direction == upward {
+    border-width: 0 $half-width $height $half-width;
     border-color: transparent transparent $color transparent;
-    border-width: 0 $halfWidth $height $halfWidth;
-  } @else if ($direction == rightward) {
+  } @else if $direction == rightward {
+    border-width: $half-height 0 $half-height $width;
     border-color: transparent transparent transparent $color;
-    border-width: $halfHeight 0 $halfHeight $width;
-  } @else if ($direction == downward) {
+  } @else if $direction == downward {
+    border-width: $height $half-width 0 $half-width;
     border-color: $color transparent transparent transparent;
-    border-width: $height $halfWidth 0 $halfWidth;
-  } @else if ($direction == leftward) {
+  } @else if $direction == leftward {
+    border-width: $half-height $width $half-height 0;
     border-color: transparent $color transparent transparent;
-    border-width: $halfHeight $width $halfHeight 0;
-  } @else if ($direction == upperLeft) {
-    border-color: $color transparent transparent transparent;
+  } @else if $direction == upperLeft {
     border-width: $height $height 0 0;
-  } @else if ($direction == upperRight) {
-    border-color: transparent $color transparent transparent;
+    border-color: $color transparent transparent transparent;
+  } @else if $direction == upperRight {
     border-width: 0 $height $height 0;
-  } @else if ($direction == lowerRight) {
-    border-color: transparent transparent $color transparent;
+    border-color: transparent $color transparent transparent;
+  } @else if $direction == lowerRight {
     border-width: 0 0 $height $height;
-  } @else if ($direction == lowerLeft) {
-    border-color: transparent transparent transparent $color;
+    border-color: transparent transparent $color transparent;
+  } @else if $direction == lowerLeft {
     border-width: $height 0 0 $height;
+    border-color: transparent transparent transparent $color;
   }
 }
