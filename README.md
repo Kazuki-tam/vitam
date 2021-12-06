@@ -16,13 +16,13 @@ Notice: This project is still in development.
 - Fast HMR with [Vite](https://vitejs.dev/)
 - PWA support
 - No virtual DOM
-- Quick local server starts
+- Quick local server
 - Compressing image assets
 - Breaking HTML smaller files with [Handlebars](https://handlebarsjs.com/)
-- Refer to [Enduring CSS](https://ecss.benfrain.com/)
+- Referring to [Enduring CSS](https://ecss.benfrain.com/)
 - Out of the box useful JavaScript libraries
 - Out of the box useful SCSS functions and Mixins
-- Lint TypeScript and Svelte with [ESLint](https://eslint.org/)
+- Checking TypeScript and Svelte with [ESLint](https://eslint.org/)
 - HTML Validation with [HTML-validate](https://html-validate.org/)
 - Transforming styles with [PostCSS](https://postcss.org/)
 
@@ -167,7 +167,8 @@ Here is the example selector.
 
 ## Notes
 
-This starter template doesn't support Internet Explorer. Feel free to use this template.
+This starter template doesn't support Internet Explorer.  
+Feel free to use this template.
 
 ## Contributes
 

@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+// Import Base file
+import { registerSW } from 'virtual:pwa-register';
+
 // Import SCSS
 import '/scss/site.scss';
 
@@ -16,3 +21,15 @@ const app = new App({
 });
 
 export default app;
+
+// Register SW
+const updateSW = registerSW({
+  onNeedRefresh() {
+    console.log('onNeedRefresh');
+  },
+  onOfflineReady() {
+    console.log('onOfflineReady');
+  },
+});
+
+void updateSW();
