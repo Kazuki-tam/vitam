@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@use '../variables/font';
-@use '../functions/strip-unit' as su;
-@use 'sass:math';
+@use "../variables/font";
+@use "../functions/strip-unit" as su;
+@use "sass:math";
 
 /* ========================================
   Get Vw Function
@@ -12,7 +12,7 @@
 ======================================== */
 
 @function get-vw($px, $viewport: 375px) {
-  @if unit($px) != 'px' or unit($viewport) != 'px' {
+  @if unit($px) != "px" or unit($viewport) != "px" {
     @error 'Argument should be px unit!';
   }
 
