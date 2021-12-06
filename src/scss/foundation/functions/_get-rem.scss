@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@use "../variables/font";
-@use "../functions/stripUnit" as su;
+@use '../variables/font';
+@use '../functions/strip-unit' as su;
 
 /* ========================================
   Get Rem Function
@@ -11,11 +11,11 @@
 ======================================== */
 
 @function get-rem($font-size, $root-font-size: font.$font-size-primary) {
-  @if unit($font-size) != "px" or unit($root-font-size) != "px" {
+  @if unit($font-size) != 'px' or unit($root-font-size) != 'px' {
     @error "Argument should be px unit!";
   }
 
-  $rem: (su.stripunit($font-size) / su.stripunit($root-font-size)) * 1rem;
+  $rem: (su.strip-unit($font-size) / su.strip-unit($root-font-size)) * 1rem;
 
   @return $rem;
 }
