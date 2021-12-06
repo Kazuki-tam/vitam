@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@use '../functions/strip-unit' as su;
-@use 'sass:math';
+@use "../functions/strip-unit" as su;
+@use "sass:math";
 
 /* ========================================
   Get Line Hight Function
@@ -11,7 +11,7 @@
 ======================================== */
 
 @function get-line-height($font-size: 16px, $line-feed: 24) {
-  @if unit($font-size) != 'px' {
+  @if unit($font-size) != "px" {
     @error "First argument should be px unit!";
   }
 
