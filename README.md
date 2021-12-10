@@ -86,6 +86,12 @@ Fix your TypeScript files
 yarn lint:fix
 ```
 
+Format your TypeScript files
+
+```
+yarn format
+```
+
 Lint and Fix SCSS files
 
 ```
