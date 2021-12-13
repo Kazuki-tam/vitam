@@ -10,7 +10,11 @@
         "PostCSS",
         "Micromodal",
         "validate",
-        "rapidly"
+        "rapidly",
+        "TypeScript",
+        "tsconfig",
+        "ts",
+        "."
       ]
     }
   },

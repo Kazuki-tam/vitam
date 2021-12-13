@@ -7,22 +7,22 @@
   ex: $breakpoints
 ======================================== */
 $breakpoints: (
-  'xs': (
+  "xs": (
     min-width: 0,
   ),
-  'sm': (
+  "sm": (
     min-width: 576px,
   ),
-  'md': (
+  "md": (
     min-width: 768px,
   ),
-  'lg': (
+  "lg": (
     min-width: 992px,
   ),
-  'xl': (
+  "xl": (
     min-width: 1200px,
   ),
-  'xxl': (
+  "xxl": (
     min-width: 1400px,
   ),
 ) !default;

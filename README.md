@@ -139,6 +139,22 @@ Here is the example selector.
 .namespace-Component_ChildNode
 ```
 
+## TypeScript
+
+This template supports TypeScript. It's easy to import ts files.
+You can customize TypeScript's options with `tsconfig.json` at any time.
+
+I've already defined some utility functions.
+Check out these files before you get started with your project.
+
+<!-- textlint-disable -->
+
+- `src/ts/utils/*.ts`
+
+<!-- textlint-enable -->
+
+[TypeScript](https://www.typescriptlang.org/)
+
 ## Libraries
 
 <!-- textlint-disable -->

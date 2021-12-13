@@ -14,9 +14,9 @@ type scaleType = 'min' | 'max';
 
 function getMediaQueryList(size: sizeType, scale: scaleType = 'min') {
   if (scale === 'max') {
-    return window.matchMedia(`(max-width: ${breakpoints[size] || '0px'})`);
+    return window.matchMedia(`(max-width: ${breakpoints[size]})`);
   }
-  return window.matchMedia(`(min-width: ${breakpoints[size] || '0px'})`);
+  return window.matchMedia(`(min-width: ${breakpoints[size]})`);
 }
 
 export { getMediaQueryList };
