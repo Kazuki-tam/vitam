@@ -141,7 +141,7 @@ Here is the example selector.
 
 ## TypeScript
 
-This template supports TypeScript. It's easy to import ts files.
+This template supports TypeScript. It's easy to import ts files.  
 You can customize TypeScript's options with `tsconfig.json` at any time.
 
 I've already defined some utility functions.
@@ -149,7 +149,7 @@ Check out these files before you get started with your project.
 
 <!-- textlint-disable -->
 
-- `src/ts/utils/*.ts`
+`src/ts/utils/*.ts`
 
 <!-- textlint-enable -->
 
