@@ -4,6 +4,7 @@
     "allowlist": {
       "allow": [
         "Vite",
+        "vite",
         "Mixins",
         "js",
         "ESLint",
@@ -14,6 +15,7 @@
         "TypeScript",
         "tsconfig",
         "ts",
+        "postInstall",
         "."
       ]
     }
