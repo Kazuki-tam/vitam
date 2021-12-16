@@ -11,7 +11,7 @@ import './libs/smoothScroll';
 import './libs/modal';
 
 // Import Svelte App
-import App from './App.svelte';
+import App from './svelte/App.svelte';
 
 // Render Svelte App
 const targetElement = document.getElementById('app');

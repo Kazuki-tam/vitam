@@ -86,11 +86,32 @@ Fix your TypeScript files
 yarn lint:fix
 ```
 
+Format your TypeScript files
+
+```
+yarn format
+```
+
 Lint and Fix SCSS files
 
 ```
 yarn stylelint
 ```
+
+Install missing TypeScript typings
+
+```
+yarn postInstall
+```
+
+## PWA
+[Vite Plugin PWA](https://vite-plugin-pwa.netlify.app/) supports making your website faster.
+Edit `vite.config.ts` if you would like to customize settings for PWA.
+You can generate icons for PWA with [Favicon Generator](https://realfavicongenerator.net/).
+
+Note: Please replace some asset files for PWA with your project's files.
+
+[Learn PWA](https://web.dev/learn/pwa/)
 
 ## Sass (Dart Sass)
 
@@ -132,6 +153,36 @@ Here is the example selector.
 ```
 .namespace-Component_ChildNode
 ```
+
+## TypeScript
+
+This template supports TypeScript. It's easy to import ts files.  
+You can customize TypeScript's options with `tsconfig.json` at any time.
+
+I've already defined some utility functions.
+Check out these files before you get started with your project.
+
+<!-- textlint-disable -->
+
+`src/ts/utils/*.ts`
+
+<!-- textlint-enable -->
+
+`postInstall` command will help you to install typings in this project.
+
+[TypeScript](https://www.typescriptlang.org/)
+
+
+### Svelte
+You can use Svelte if you would like to build a SPA at the part of a website.
+
+<!-- textlint-disable -->
+
+`src/ts/svelte/*.svelte`
+
+<!-- textlint-enable -->
+
+[Svelte](https://svelte.dev/)
 
 ## Libraries
 

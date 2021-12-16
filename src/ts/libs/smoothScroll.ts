@@ -4,7 +4,7 @@ import SmoothScroll from 'smooth-scroll';
 
 const smoothScroll = new SmoothScroll('a[href*="#"]', {
   speed: 500,
-  speedAsDuration: true
+  speedAsDuration: true,
 });
 
 export default smoothScroll;

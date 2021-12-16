@@ -4,13 +4,19 @@
     "allowlist": {
       "allow": [
         "Vite",
+        "vite",
         "Mixins",
         "js",
         "ESLint",
         "PostCSS",
         "Micromodal",
         "validate",
-        "rapidly"
+        "rapidly",
+        "TypeScript",
+        "tsconfig",
+        "ts",
+        "postInstall",
+        "."
       ]
     }
   },
