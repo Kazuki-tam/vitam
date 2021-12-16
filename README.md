@@ -106,7 +106,7 @@ yarn postInstall
 
 ## PWA
 [Vite Plugin PWA](https://vite-plugin-pwa.netlify.app/) supports making your website faster.
-Edit `vite.config.ts` if you would like to customize settings for PWA.
+Edit `vite.config.ts` if you would like to customize settings for PWA. 
 You can generate icons for PWA with [Favicon Generator](https://realfavicongenerator.net/).
 
 Note: Please replace some asset files for PWA with your project's files.
