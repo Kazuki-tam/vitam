@@ -3,6 +3,26 @@
 {{> _head }}
 
 <body>
+  <div id="sample-tab" class="sample-Tab-wrapper">
+    <ul class="sample-Tab-nav" role="tablist">
+      <li role="presentation">
+        <button role="tab" aria-controls="panel1" aria-selected="true">
+          Tab 1
+        </button>
+      </li>
+      <li role="presentation">
+        <button role="tab" aria-controls="panel2" aria-selected="false">
+          Tab 2
+        </button>
+      </li>
+    </ul>
+    <div id="panel1" class="sample-Tab-content" role="tabpanel" aria-hidden="false">
+      <p>Panel1 Content</p>
+    </div>
+    <div id="panel2" class="sample-Tab-content" role="tabpanel" aria-hidden="true">
+      <p>Panel2 Content</p>
+    </div>
+  </div>
   <script type="module" src="/ts/main.ts"></script>
 </body>
 

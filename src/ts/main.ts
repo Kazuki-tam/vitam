@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 // Import Base file
 import { registerSW } from 'virtual:pwa-register';
 
@@ -10,17 +8,11 @@ import '/scss/site.scss';
 import './libs/smoothScroll';
 import './libs/modal';
 
-// Import Svelte App
-import App from './svelte/App.svelte';
+// Import Namespace
+import sample from './namespace/sample';
 
-// Render Svelte App
-const targetElement = document.getElementById('app');
-const app = new App({
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-  target: targetElement!,
-});
-
-export default app;
+// Call Namespace
+sample();
 
 // Register SW
 const updateSW = registerSW({

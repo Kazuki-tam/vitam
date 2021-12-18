@@ -3,8 +3,8 @@
 // =========================================
 // Foundation
 // =========================================
-@use "./foundation/_normalize";
-@use "./foundation/_base";
+@use './foundation/_normalize';
+@use './foundation/_base';
 
 // =========================================
 // SiteWide
@@ -13,4 +13,5 @@
 // =========================================
 // Namespace
 // =========================================
-@use "./namespace/top";
+@use './namespace/top';
+@use './namespace/sample';

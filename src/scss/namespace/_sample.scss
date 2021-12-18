@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* ========================================
+  Samle page
+======================================== */
+
+.sample-Tab-content {
+  &[aria-hidden='true'] {
+    display: none;
+  }
+  &[aria-hidden='false'] {
+    display: block;
+  }
+}
