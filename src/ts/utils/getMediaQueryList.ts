@@ -7,8 +7,10 @@ import { breakpoints } from '../constants/breakpoints';
  * ex: getMediaQueryList('md').addEventListener('change', (event) => {if (event.matches) {...}});
  * https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList
  */
+
 // class infix
 type sizeType = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
+
 // max-width or min-width
 type scaleType = 'min' | 'max';
 
