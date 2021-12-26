@@ -35,7 +35,7 @@ function tab(wrapperId: string, panelName?: string): void {
     item.addEventListener('click', toggleTab);
   });
 
-  // Open a default panel
+  // Open a specific panel
   if (panelName) {
     const indexTab = element?.querySelector(`[aria-controls="${panelName}"]`) as HTMLElement;
     indexTab?.click();
