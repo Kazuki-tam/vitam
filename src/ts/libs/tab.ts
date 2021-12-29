@@ -13,17 +13,23 @@ function tab(wrapperId: string, panelName?: string): void {
   const element = document.getElementById(wrapperId);
   const tabList = element?.querySelector('[role="tablist"]');
   const tabButtonList = element?.querySelectorAll('[role="tab"]');
+  const tabArrayList = [].slice.call(tabButtonList);
+  let tabFocus = 0;
 
   // Toggle function
   const toggleTab = (event: Event): void => {
-    const eventTarget = event.currentTarget as HTMLInputElement;
+    const eventTarget = event.currentTarget as HTMLButtonElement;
     const targetPanel = eventTarget.getAttribute('aria-controls');
     const activeTab = element?.querySelector('[aria-selected="true"]');
     const activeContent = element?.querySelector('[aria-hidden="false"]');
 
     // Toggle tab's aria-selected
     activeTab?.setAttribute('aria-selected', 'false');
+    activeTab?.setAttribute('tabindex', '-1');
     eventTarget?.setAttribute('aria-selected', 'true');
+    eventTarget?.setAttribute('tabindex', '0');
+    const indexNum = (tabArrayList as HTMLButtonElement[]).indexOf(eventTarget);
+    tabFocus = indexNum;
 
     // Toggle content's aria-hidden
     activeContent?.setAttribute('aria-hidden', 'true');
@@ -37,7 +43,6 @@ function tab(wrapperId: string, panelName?: string): void {
   });
 
   // Tab keydown EventListener
-  let tabFocus = 0;
   tabList?.addEventListener('keydown', (event: KeyboardEventInit) => {
     // Detect arrow direction
     if (event.code === 'ArrowRight' || event.code === 'ArrowLeft') {
@@ -65,10 +70,16 @@ function tab(wrapperId: string, panelName?: string): void {
   });
 
   // Open the specific panel
-  if (panelName) {
-    const indexTab = element?.querySelector(`[aria-controls="${panelName}"]`) as HTMLButtonElement;
-    indexTab?.click();
-    indexTab?.focus();
+  if (tabButtonList && panelName) {
+    const activeTab = element?.querySelector('[aria-selected="true"]');
+    const tabIndexed = element?.querySelector(`[aria-controls="${panelName}"]`) as HTMLButtonElement;
+    const indexNum = (tabArrayList as HTMLButtonElement[]).indexOf(tabIndexed);
+    tabFocus = indexNum;
+    // Initialize tabindex
+    activeTab?.setAttribute('tabindex', '-1');
+    tabIndexed.setAttribute('tabindex', '0');
+    tabIndexed?.click();
+    tabIndexed?.focus();
   }
 }
 
