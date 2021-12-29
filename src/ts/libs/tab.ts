@@ -42,8 +42,8 @@ function tab(wrapperId: string, panelName?: string): void {
     item.addEventListener('click', toggleTab);
   });
 
-  // Tab keydown EventListener
-  tabList?.addEventListener('keydown', (event: KeyboardEventInit) => {
+  // Keydown function
+  const keydownFocus = (event: KeyboardEventInit) => {
     // Detect arrow direction
     if (event.code === 'ArrowRight' || event.code === 'ArrowLeft') {
       // Reset tabindex
@@ -67,7 +67,10 @@ function tab(wrapperId: string, panelName?: string): void {
       tabFocused && tabFocused.setAttribute('tabindex', '0');
       tabFocused && tabFocused.focus();
     }
-  });
+  };
+
+  // Tab keydown EventListener
+  tabList?.addEventListener('keydown', keydownFocus);
 
   // Open the specific panel
   if (tabButtonList && panelName) {
