@@ -1,7 +1,6 @@
 /**
  * Tab Function
  * @param { String } wrapperId - Wrapper contet's ID
- * @param { String } [panelName] - Panel's name
  * ex: tab('sample-tab');
  * Note: Control UI elements with aria-* attributes
  * [aria-hidden='true'] {display: none;}
