@@ -1,7 +1,6 @@
 /**
  * Tab Function
  * @param { String } wrapperId - Wrapper contet's ID
- * @param { String } [panelName] - Panel's name
  * ex: tab('sample-tab');
  * Note: Control UI elements with aria-* attributes
  * [aria-hidden='true'] {display: none;}
@@ -9,12 +8,16 @@
  * https://github.com/Kazuki-tam/vitam/wiki/Libraries
  */
 
-function tab(wrapperId: string, panelName?: string): void {
+function tab(wrapperId: string): void {
   const element = document.getElementById(wrapperId);
   const tabList = element?.querySelector('[role="tablist"]');
   const tabButtonList = element?.querySelectorAll('[role="tab"]');
   const tabArrayList = [].slice.call(tabButtonList);
-  let tabFocus = 0;
+
+  // Initialize tabFocus
+  const activeTab = element?.querySelector('[aria-selected="true"]') as HTMLButtonElement;
+  const indexNum = (tabArrayList as HTMLButtonElement[]).indexOf(activeTab);
+  let tabFocus = indexNum || 0;
 
   // Toggle function
   const toggleTab = (event: Event): void => {
@@ -42,8 +45,8 @@ function tab(wrapperId: string, panelName?: string): void {
     item.addEventListener('click', toggleTab);
   });
 
-  // Tab keydown EventListener
-  tabList?.addEventListener('keydown', (event: KeyboardEventInit) => {
+  // Keydown function
+  const keydownFocus = (event: KeyboardEventInit) => {
     // Detect arrow direction
     if (event.code === 'ArrowRight' || event.code === 'ArrowLeft') {
       // Reset tabindex
@@ -67,20 +70,10 @@ function tab(wrapperId: string, panelName?: string): void {
       tabFocused && tabFocused.setAttribute('tabindex', '0');
       tabFocused && tabFocused.focus();
     }
-  });
+  };
 
-  // Open the specific panel
-  if (tabButtonList && panelName) {
-    const activeTab = element?.querySelector('[aria-selected="true"]');
-    const tabIndexed = element?.querySelector(`[aria-controls="${panelName}"]`) as HTMLButtonElement;
-    const indexNum = (tabArrayList as HTMLButtonElement[]).indexOf(tabIndexed);
-    tabFocus = indexNum;
-    // Initialize tabindex
-    activeTab?.setAttribute('tabindex', '-1');
-    tabIndexed.setAttribute('tabindex', '0');
-    tabIndexed?.click();
-    tabIndexed?.focus();
-  }
+  // Tab keydown EventListener
+  tabList?.addEventListener('keydown', keydownFocus);
 }
 
 export { tab };
