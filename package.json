@@ -1,8 +1,9 @@
 {
   "name": "vitam",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "VITAM is a front-end template with Vite for static websites.",
   "scripts": {
+    "checkLicense": "license-checker --production",
     "postInstall": "typesync",
     "stylelint": "stylelint 'src/**/*.{css,scss}' --fix",
     "textLint": "textlint *.md",

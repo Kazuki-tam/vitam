@@ -104,9 +104,16 @@ Install missing TypeScript typings
 yarn postInstall
 ```
 
+Check the package's license
+
+```
+yarn checkLicense
+```
+
 ## PWA
+
 [Vite Plugin PWA](https://vite-plugin-pwa.netlify.app/) supports making your website faster.
-Edit `vite.config.ts` if you would like to customize settings for PWA. 
+Edit `vite.config.ts` if you would like to customize settings for PWA.
 You can generate icons for PWA with [Favicon Generator](https://realfavicongenerator.net/).
 
 Note: Please replace some asset files for PWA with your project's files.
@@ -172,8 +179,8 @@ Check out these files before you get started with your project.
 
 [TypeScript](https://www.typescriptlang.org/)
 
-
 ### Svelte
+
 You can use Svelte if you would like to build a SPA at the part of a website.
 
 <!-- textlint-disable -->

@@ -4478,7 +4478,7 @@ levn@^0.4.1:
 
 license-checker@^25.0.1:
   version "25.0.1"
-  resolved "https://registry.npmjs.org/license-checker/-/license-checker-25.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/license-checker/-/license-checker-25.0.1.tgz#4d14504478a5240a857bb3c21cd0491a00d761fa"
   integrity sha512-mET5AIwl7MR2IAKYYoVBBpV0OnkKQ1xGj2IMMeEFIs42QAkEVjRtFZGWmQ28WeU7MP779iAgOaOy93Mn44mn6g==
   dependencies:
     chalk "^2.4.1"
