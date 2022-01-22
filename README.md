@@ -198,6 +198,7 @@ You can use Svelte if you would like to build a SPA at the part of a website.
 - Slider: [Swiper](https://swiperjs.com/)
 - Modal: [Micromodal.js](https://micromodal.vercel.app/)
 - Smooth Scroll: [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+- Animation: [Tween24.js](https://github.com/a24/tween24js)
 
 <!-- textlint-enable -->
 
