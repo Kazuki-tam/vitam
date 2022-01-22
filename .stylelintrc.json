@@ -23,6 +23,7 @@
     "no-descending-specificity": null,
     "no-duplicate-selectors": null,
     "block-no-empty": null,
+    "selector-class-pattern": null,
     "rule-empty-line-before": [
       "always",
       {
