@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@use "sass:math";
 @use "../variables/font";
 @use "../functions/strip-unit" as su;
 
@@ -15,7 +16,7 @@
     @error "Argument should be px unit!";
   }
 
-  $rem: (su.strip-unit($font-size) / su.strip-unit($root-font-size)) * 1rem;
+  $rem: math.div(su.strip-unit($font-size), su.strip-unit($root-font-size)) * 1rem;
 
   @return $rem;
 }

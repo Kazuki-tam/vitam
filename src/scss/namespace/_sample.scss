@@ -5,10 +5,11 @@
 ======================================== */
 
 .sample-Tab-content {
-  &[aria-hidden='true'] {
+  &[aria-hidden="true"] {
     display: none;
   }
-  &[aria-hidden='false'] {
+
+  &[aria-hidden="false"] {
     display: block;
   }
 }
