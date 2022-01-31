@@ -191,6 +191,17 @@ You can use Svelte if you would like to build a SPA at the part of a website.
 
 [Svelte](https://svelte.dev/)
 
+## GitHub Actions
+
+If you use GitHub in your project, you can take advantage of GitHub Actions to automate your development workflows.
+Check out this file before you get started with your project.
+
+<!-- textlint-disable -->
+
+`.github/workflows/project-ci.yml`
+
+<!-- textlint-enable -->
+
 ## Libraries
 
 <!-- textlint-disable -->
