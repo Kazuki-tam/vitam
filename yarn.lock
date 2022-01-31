@@ -5140,10 +5140,10 @@ no-cliches@^0.3.0:
   resolved "https://registry.npmjs.org/no-cliches/-/no-cliches-0.3.4.tgz"
   integrity sha512-oUqnng1vhKLaA4GR+OzVbLuZZ7OOguKCtMHxHMiyP8+9mXidKfoCyc030LbAyNI3xcgCHHyitK3Q8wP+w6DwVQ==
 
-node-fetch@^2.6.0:
-  version "2.6.6"
-  resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.6.tgz"
-  integrity sha512-Z8/6vRlTUChSdIgMa51jxQ4lrw/Jy5SOW10ObaA47/RElsAN2c5Pn8bTgFGWn/ibwzXTE8qwr1Yzx28vsecXEA==
+node-fetch@^2.6.0, node-fetch@^2.6.7:
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
+  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
   dependencies:
     whatwg-url "^5.0.0"
 
@@ -7257,12 +7257,7 @@ treeify@^1.1.0:
   resolved "https://registry.npmjs.org/treeify/-/treeify-1.1.0.tgz"
   integrity sha512-1m4RA7xVAJrSGrrXGs0L3YTwyvBs2S8PbRHaLZAkFw7JR8oIFwYtysxlBZhYIa7xSyiYJKZ3iGrrk55cGA3i9A==
 
-trim-newlines@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/trim-newlines/-/trim-newlines-1.0.0.tgz"
-  integrity sha1-WIeWa7WCpFA6QetST301ARgVphM=
-
-trim-newlines@^3.0.0:
+trim-newlines@^1.0.0, trim-newlines@^3.0.0, trim-newlines@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/trim-newlines/-/trim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
   integrity sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==

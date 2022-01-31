@@ -207,6 +207,7 @@ You can use Svelte if you would like to build a SPA at the part of a website.
 
 [Svelte](https://svelte.dev/)
 
+
 ## PWA
 
 [Vite Plugin PWA](https://vite-plugin-pwa.netlify.app/) supports making your website faster.
@@ -216,6 +217,7 @@ You can generate icons for PWA with [Favicon Generator](https://realfavicongener
 Note: Please replace some asset files for PWA with your project's files.
 
 [Learn PWA](https://web.dev/learn/pwa/)
+
 
 ## GitHub Actions
 
