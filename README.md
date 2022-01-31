@@ -74,6 +74,12 @@ Locally preview production build
 yarn serve
 ```
 
+Validate HTML files
+
+```
+yarn htmlValidate
+```
+
 Lint your TypeScript files
 
 ```
@@ -110,15 +116,25 @@ Check the package's license
 yarn checkLicense
 ```
 
-## PWA
+## HTML
 
-[Vite Plugin PWA](https://vite-plugin-pwa.netlify.app/) supports making your website faster.
-Edit `vite.config.ts` if you would like to customize settings for PWA.
-You can generate icons for PWA with [Favicon Generator](https://realfavicongenerator.net/).
+You can handle bundling multiple HTML files with [vite-plugin-handlebars](https://www.npmjs.com/package/vite-plugin-handlebars).
+Make sure [Handlebars Context](https://handlebarsjs.com/guide/#simple-expressions) as you need.
 
-Note: Please replace some asset files for PWA with your project's files.
+If you want to use multiple partial files, Add your partial files into the `_partials` folder.
 
-[Learn PWA](https://web.dev/learn/pwa/)
+`src/_partials`
+
+You can call partial files directly by other templates like this example.
+
+```
+{{> _header }}
+  <main>
+    <h1>Welcome to VITAM Docs!</h1>
+    <p>VITAM is a front-end template with Vite for static websites.</p>
+  </main>
+{{> _footer }}
+```
 
 ## Sass (Dart Sass)
 
@@ -190,6 +206,18 @@ You can use Svelte if you would like to build a SPA at the part of a website.
 <!-- textlint-enable -->
 
 [Svelte](https://svelte.dev/)
+
+
+## PWA
+
+[Vite Plugin PWA](https://vite-plugin-pwa.netlify.app/) supports making your website faster.
+Edit `vite.config.ts` if you would like to customize settings for PWA.
+You can generate icons for PWA with [Favicon Generator](https://realfavicongenerator.net/).
+
+Note: Please replace some asset files for PWA with your project's files.
+
+[Learn PWA](https://web.dev/learn/pwa/)
+
 
 ## GitHub Actions
 

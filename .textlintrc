@@ -11,11 +11,15 @@
         "PostCSS",
         "Micromodal",
         "validate",
+        "Validate",
         "rapidly",
         "TypeScript",
         "tsconfig",
         "ts",
         "postInstall",
+        "HTML-validate",
+        "multiple",
+        "src",
         "."
       ]
     }
