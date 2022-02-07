@@ -2,7 +2,6 @@ import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
 import { resolve } from 'path';
 import { siteData, pagesData } from './site.config';
-import { svelte } from '@sveltejs/vite-plugin-svelte';
 import viteImagemin from 'vite-plugin-imagemin';
 import { VitePWA } from 'vite-plugin-pwa';
 
@@ -89,7 +88,6 @@ export default defineConfig({
         ],
       },
     }),
-    svelte(),
     handlebars({
       partialDirectory: resolve(__dirname, siteData.root, '_partials'),
       context(pagePath) {

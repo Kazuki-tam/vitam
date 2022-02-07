@@ -15,14 +15,13 @@ Notice: This project is still in development.
 
 - Fast HMR with [Vite](https://vitejs.dev/)
 - PWA support
-- No virtual DOM
 - Quick local server
 - Compressing image assets
 - Breaking HTML smaller files with [Handlebars](https://handlebarsjs.com/)
 - Referring to [Enduring CSS](https://ecss.benfrain.com/)
 - Out of the box useful JavaScript libraries
 - Out of the box useful SCSS functions and Mixins
-- Checking TypeScript and Svelte with [ESLint](https://eslint.org/)
+- Checking TypeScript with [ESLint](https://eslint.org/)
 - HTML Validation with [HTML-validate](https://html-validate.org/)
 - Transforming styles with [PostCSS](https://postcss.org/)
 
@@ -42,7 +41,6 @@ Notice: This project is still in development.
 - [Handlebars](https://handlebarsjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
-- [Svelte](https://svelte.dev/)
 
 <!-- textlint-enable -->
 
@@ -195,19 +193,6 @@ Check out these files before you get started with your project.
 
 [TypeScript](https://www.typescriptlang.org/)
 
-### Svelte
-
-You can use Svelte if you would like to build a SPA at the part of a website.
-
-<!-- textlint-disable -->
-
-`src/ts/svelte/*.svelte`
-
-<!-- textlint-enable -->
-
-[Svelte](https://svelte.dev/)
-
-
 ## PWA
 
 [Vite Plugin PWA](https://vite-plugin-pwa.netlify.app/) supports making your website faster.
@@ -217,7 +202,6 @@ You can generate icons for PWA with [Favicon Generator](https://realfavicongener
 Note: Please replace some asset files for PWA with your project's files.
 
 [Learn PWA](https://web.dev/learn/pwa/)
-
 
 ## GitHub Actions
 
@@ -255,7 +239,6 @@ Check out this file before you get started with your project.
 - [.textlintrc](https://textlint.github.io/docs/configuring.html)
 - [vite.config.ts](https://vitejs.dev/config/)
 - [tsconfig.json](https://www.typescriptlang.org/tsconfig)
-- [svelte.config.ts](https://kit.svelte.dev/docs)
 
 <!-- textlint-enable -->
 
