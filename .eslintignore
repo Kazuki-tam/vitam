@@ -5,4 +5,3 @@ dist/
 *.config.js
 *.config.ts
 .eslintrc.js
-theme-app-extension

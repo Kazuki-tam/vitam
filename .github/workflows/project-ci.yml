@@ -30,6 +30,9 @@ jobs:
         yarn lint
         yarn stylelint
         yarn textLint
+    - name: Test
+      run: |
+        yarn test
     - name: Check Packages
       run: |
         yarn audit --groups dependencies
