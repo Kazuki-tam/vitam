@@ -34,6 +34,7 @@ Notice: This project is still in development.
 <!-- textlint-disable -->
 
 - [Yarn](https://yarnpkg.com/)
+- [Jest](https://jestjs.io/)
 - [ESLint](https://eslint.org/)
 - [HTML-vallidate](https://html-validate.org/)
 - [Prettier](https://prettier.io/)
@@ -114,9 +115,15 @@ Check the package's license
 yarn checkLicense
 ```
 
+Test TypeScript code
+
+```
+yarn test
+```
+
 ## HTML
 
-You can handle bundling multiple HTML files with [vite-plugin-handlebars](https://www.npmjs.com/package/vite-plugin-handlebars).
+You can handle bundling multiple HTML files with [vite-plugin-handlebars](https://www.npmjs.com/package/vite-plugin-handlebars).  
 Make sure [Handlebars Context](https://handlebarsjs.com/guide/#simple-expressions) as you need.
 
 If you want to use multiple partial files, Add your partial files into the `_partials` folder.
@@ -136,7 +143,7 @@ You can call partial files directly by other templates like this example.
 
 ## Sass (Dart Sass)
 
-You can manage style sheets logically with Sass. I've already defined some functions and Mixins.
+You can manage style sheets logically with Sass. I've already defined some functions and Mixins.  
 Check out these files before you get started with your project.
 
 <!-- textlint-disable -->
@@ -239,6 +246,7 @@ Check out this file before you get started with your project.
 - [.textlintrc](https://textlint.github.io/docs/configuring.html)
 - [vite.config.ts](https://vitejs.dev/config/)
 - [tsconfig.json](https://www.typescriptlang.org/tsconfig)
+- [jest.config.ts](https://jestjs.io/docs/configuration)
 
 <!-- textlint-enable -->
 
