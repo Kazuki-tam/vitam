@@ -16,6 +16,7 @@
     "lint": "npm-run-all eslint checkTypes",
     "lint:fix": "npm-run-all eslint:fix checkTypes format",
     "test": "jest",
+    "test:watch": "jest --watch",
     "start": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview"
