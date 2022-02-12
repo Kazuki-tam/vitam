@@ -1,4 +1,4 @@
-import { useNone } from './useNone';
+import { useNone } from '../useNone';
 
 describe('useNone test', () => {
   // Sample array
@@ -10,8 +10,13 @@ describe('useNone test', () => {
     { title: 'Sass textbook', price: 2000 },
   ];
 
-  test('useNone statement pattern', () => {
+  test('State pattern to be false', () => {
     const checkPriceOver = (book: { price: number }) => book.price >= 3000;
     expect(useNone(books, checkPriceOver)).toBe(false);
+  });
+
+  test('State pattern to be true', () => {
+    const checkPriceOver = (book: { price: number }) => book.price >= 3500;
+    expect(useNone(books, checkPriceOver)).toBe(true);
   });
 });

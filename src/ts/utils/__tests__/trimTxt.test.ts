@@ -1,4 +1,4 @@
-import { trimTxt } from './trimTxt';
+import { trimTxt } from '../trimTxt';
 
 describe('trimTxt test', () => {
   const sampleText =

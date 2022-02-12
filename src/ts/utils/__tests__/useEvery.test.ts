@@ -1,6 +1,6 @@
-import { useSome } from './useSome';
+import { useEvery } from '../useEvery';
 
-describe('useSome test', () => {
+describe('useEvery test', () => {
   // Sample array
   const books = [
     { title: 'PHP7 for Beginner', price: 2700 },
@@ -10,12 +10,12 @@ describe('useSome test', () => {
     { title: 'Sass textbook', price: 2000 },
   ];
 
-  test('useSome statement pattern 1', () => {
+  test('State pattern to be true', () => {
     const checkPriceOver = (book: { price: number }) => book.price >= 1000;
-    expect(useSome(books, checkPriceOver)).toBe(true);
+    expect(useEvery(books, checkPriceOver)).toBe(true);
   });
-  test('useSome statement pattern 2', () => {
-    const checkPriceOver = (book: { title: string }) => book.title === 'Sass textbook1';
-    expect(useSome(books, checkPriceOver)).toBe(false);
+  test('State pattern to be false', () => {
+    const checkPriceOver = (book: { price: number }) => book.price >= 2000;
+    expect(useEvery(books, checkPriceOver)).toBe(false);
   });
 });

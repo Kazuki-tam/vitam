@@ -1,4 +1,4 @@
-import { useMap } from './useMap';
+import { useMap } from '../useMap';
 
 describe('useMap test', () => {
   // Sample array
@@ -10,10 +10,10 @@ describe('useMap test', () => {
     { title: 'Sass textbook', price: 2000 },
   ];
 
-  // Reasult array
+  // Result array
   const result = [5400, 6800, 3200, 5600, 4000];
 
-  test('useMap statement pattern', () => {
+  test('State pattern to be a processed array', () => {
     const boublePrice = (book: { price: number }) => book.price * 2;
     expect(useMap(books, boublePrice)).toStrictEqual(result);
   });

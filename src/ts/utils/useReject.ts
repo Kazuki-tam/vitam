@@ -1,13 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /**
- * Map Function
+ * Reject Function
  * @param { Array } array - Target array
  * @param { (value: any, index: number, array: any[]) => unknown } callback - Callback function
  * @returns { any[] }
  */
 
-function useMap(array: any[], callback: (value: any, index: number, array: any[]) => unknown): any[] {
-  return array.map(callback);
+function useReject(array: any[], callback: (value: any) => unknown): any[] {
+  return array.filter((item) => {
+    return !callback(item);
+  });
 }
 
-export { useMap };
+export { useReject };

@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /**
- * Every Function
+ * Filter Function
  * @param { Array } array - Target array
  * @param { (value: any, index: number, array: any[]) => unknown } callback - Callback function
- * @returns { boolean }
+ * @returns { any[] }
  */
 
-function useEvery(array: any[], callback: (value: any, index: number, array: any[]) => unknown): boolean {
-  return array.every(callback);
+function useFilter(array: any[], callback: (value: any, index: number, array: any[]) => unknown): any[] {
+  return array.filter(callback);
 }
 
-export { useEvery };
+export { useFilter };
