@@ -236,6 +236,7 @@ Check out this file before you get started with your project.
 
 <!-- textlint-disable -->
 
+- [package.json](https://docs.npmjs.com/cli/v7/configuring-npm/package-json)
 - [.editorconfig](https://editorconfig.org/)
 - [.prettierrc](https://prettier.io/docs/en/configuration.html)
 - [.eslintrc.json](https://eslint.org/docs/user-guide/configuring/)

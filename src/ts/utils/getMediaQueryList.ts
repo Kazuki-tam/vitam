@@ -2,8 +2,8 @@ import { breakpoints } from '../constants/breakpoints';
 
 /**
  * Get MediaQueryList Function
- * @param { sizeType }
- * @returns { object } MediaQueryList
+ * @param { sizeType } - Break points
+ * @returns { object } - MediaQueryList
  * ex: getMediaQueryList('md').addEventListener('change', (event) => {if (event.matches) {...}});
  * https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList
  */
