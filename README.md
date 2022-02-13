@@ -164,6 +164,8 @@ const pagesData = {
 };
 ```
 
+[📖 Learn Handlebars](https://handlebarsjs.com/)
+
 ## Sass (Dart Sass)
 
 You can manage style sheets logically with Sass. I've already defined some functions and Mixins.  
@@ -176,13 +178,13 @@ Check out these files before you get started with your project.
 
 <!-- textlint-enable -->
 
-[Sass](https://sass-lang.com/)
+[📖 Learn Sass](https://sass-lang.com/)
 
 ## CSS Architecture
 
 This starter template gives you CSS architecture which is [Enduring CSS](https://ecss.benfrain.com/) standardly, but it's not necessary architecture in all projects. I recommend you introduce the best architecture in each project.
 
-[CSS Architecture](https://philipwalton.com/articles/css-architecture/)
+[📖 Learn CSS Architecture](https://philipwalton.com/articles/css-architecture/)
 
 ### What's Enduring CSS?
 
@@ -195,7 +197,7 @@ You can get these bellow benefits from Enduring CSS.
 - One key selector to rule them all
 - Handling state
 
-[Enduring CSS](https://ecss.benfrain.com/)
+[📖 Learn Enduring CSS](https://ecss.benfrain.com/)
 
 ### How to write Enduring CSS selectors
 
@@ -221,7 +223,10 @@ Check out these files before you get started with your project.
 
 `postInstall` command will help you to install typings in this project.
 
-[TypeScript](https://www.typescriptlang.org/)
+Jest is built-in in this project. You can run Jest from the command line.
+
+[📖 Learn TypeScript](https://www.typescriptlang.org/)
+[📖 Learn Jest](https://jestjs.io/)
 
 ## PWA
 
@@ -231,7 +236,7 @@ You can generate icons for PWA with [Favicon Generator](https://realfavicongener
 
 Note: Please replace some asset files for PWA with your project's files.
 
-[Learn PWA](https://web.dev/learn/pwa/)
+[📖 Learn PWA](https://web.dev/learn/pwa/)
 
 ## GitHub Actions
 
