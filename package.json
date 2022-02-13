@@ -1,8 +1,8 @@
 {
   "name": "vitam",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "VITAM is a front-end template with Vite for static websites.",
-  "author": "Kazuki Yonemoto",
+  "author": "Kazuki Yonemoto (https://dev.to/tim_yone)",
   "scripts": {
     "checkLicense": "license-checker --production",
     "postInstall": "typesync",
