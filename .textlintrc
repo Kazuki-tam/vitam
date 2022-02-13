@@ -3,6 +3,7 @@
     "comments": true,
     "allowlist": {
       "allow": [
+        "site.config.ts",
         "Vite",
         "vite",
         "Mixins",

@@ -4,8 +4,6 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 
 ## Status
 
-Notice: This project is still in development.
-
 [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/releases/tag/v0.0.1)
 [![Issues](https://img.shields.io/github/issues/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/issues)
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
@@ -24,6 +22,7 @@ Notice: This project is still in development.
 - Checking TypeScript with [ESLint](https://eslint.org/)
 - HTML Validation with [HTML-validate](https://html-validate.org/)
 - Transforming styles with [PostCSS](https://postcss.org/)
+- Built-in test runner with [Jest](https://jestjs.io/)
 
 ## Requirements
 
@@ -115,10 +114,14 @@ Check the package's license
 yarn checkLicense
 ```
 
-Test TypeScript code
+Test project's code
 
 ```
 yarn test
+```
+
+```
+yarn test:watch
 ```
 
 ## HTML
@@ -139,6 +142,26 @@ You can call partial files directly by other templates like this example.
     <p>VITAM is a front-end template with Vite for static websites.</p>
   </main>
 {{> _footer }}
+```
+
+`site.config.ts` manages the site's basic information.
+You have to edit `site.config.ts` when you create a new page.
+
+```js
+const pagesData = {
+  '/sample/index.html': {
+    locale: siteData.locale,
+    title: `Smaple Page | ${siteData.siteName}`,
+    description: `This is a sample page. ${siteData.description}`,
+    url: `${siteData.url}/sampple/`,
+    ogpImage: siteData.ogpImage,
+    ogType: 'article',
+    fbAppId: siteData.fbAppId,
+    fbAdmins: siteData.fbAdmins,
+    twitterCard: siteData.twitterCard,
+    twitterSite: siteData.twitterSite,
+  },
+};
 ```
 
 ## Sass (Dart Sass)
