@@ -225,7 +225,7 @@ Check out these files before you get started with your project.
 
 Jest is built-in in this project. You can run Jest from the command line.
 
-[📖 Learn TypeScript](https://www.typescriptlang.org/)
+[📖 Learn TypeScript](https://www.typescriptlang.org/)  
 [📖 Learn Jest](https://jestjs.io/)
 
 ## PWA
