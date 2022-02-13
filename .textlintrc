@@ -3,6 +3,7 @@
     "comments": true,
     "allowlist": {
       "allow": [
+        "📖",
         "is built",
         "site.config.ts",
         "Vite",
