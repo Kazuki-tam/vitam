@@ -20,7 +20,8 @@
     "test:watch": "jest --watch",
     "start": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "preview": "vite preview",
+    "serve": "npm-run-all build preview"
   },
   "license": "MIT",
   "devDependencies": {
