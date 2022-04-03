@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@use "./variables/font";
+@use "./variables/font-size";
+@use "./variables/font-family";
 @use "./variables/color";
 
 /* ========================================
@@ -57,8 +58,8 @@ body {
   min-width: 320px;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  font-family: font.$font-family-primary;
-  font-size: font.$font-size-primary;
+  font-family: font-family.$font-family-primary;
+  font-size: font-size.$font-size-primary;
   line-height: 1.6;
   font-feature-settings: "palt";
   -webkit-font-smoothing: antialiased;
