@@ -6,7 +6,7 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 
 [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/releases/tag/v0.0.1)
 [![Issues](https://img.shields.io/github/issues/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/issues)
-![Maintenance](https://img.shields.io/maintenance/yes/2021)
+![Maintenance](https://img.shields.io/maintenance/yes/2022)
 ![Release date](https://img.shields.io/github/release-date/Kazuki-tam/vitam)
 
 ## Features
@@ -126,7 +126,7 @@ yarn test:watch
 
 ## HTML
 
-You can handle bundling multiple HTML files with [vite-plugin-handlebars](https://www.npmjs.com/package/vite-plugin-handlebars).  
+You can handle bundling multiple HTML files with [vite-plugin-handlebars](https://www.npmjs.com/package/vite-plugin-handlebars).
 Make sure [Handlebars Context](https://handlebarsjs.com/guide/#simple-expressions) as you need.
 
 If you want to use multiple partial files, Add your partial files into the `_partials` folder.
@@ -168,7 +168,7 @@ const pagesData = {
 
 ## Sass (Dart Sass)
 
-You can manage style sheets logically with Sass. I've already defined some functions and Mixins.  
+You can manage style sheets logically with Sass. I've already defined some functions and Mixins.
 Check out these files before you get started with your project.
 
 <!-- textlint-disable -->
@@ -209,7 +209,7 @@ Here is the example selector.
 
 ## TypeScript
 
-This template supports TypeScript. It's easy to import ts files.  
+This template supports TypeScript. It's easy to import ts files.
 You can customize TypeScript's options with `tsconfig.json` at any time.
 
 I've already defined some utility functions.
@@ -225,7 +225,7 @@ Check out these files before you get started with your project.
 
 Jest is built-in in this project. You can run Jest from the command line.
 
-[📖 Learn TypeScript](https://www.typescriptlang.org/)  
+[📖 Learn TypeScript](https://www.typescriptlang.org/)
 [📖 Learn Jest](https://jestjs.io/)
 
 ## PWA
@@ -285,7 +285,7 @@ Check out this file before you get started with your project.
 
 ## Notes
 
-This starter template doesn't support Internet Explorer.  
+This starter template doesn't support Internet Explorer.
 Feel free to use this template.
 
 ## Contributes

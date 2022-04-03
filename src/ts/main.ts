@@ -12,7 +12,10 @@ import './libs/modal';
 import sample from './namespace/sample';
 
 // Call Namespace
-sample();
+const checkSamplePage = document.getElementById('sample');
+if (checkSamplePage) {
+  sample();
+}
 
 // Register SW
 const updateSW = registerSW({
