@@ -228,6 +228,26 @@ Jest is built-in in this project. You can run Jest from the command line.
 [📖 Learn TypeScript](https://www.typescriptlang.org/)
 [📖 Learn Jest](https://jestjs.io/)
 
+## Icons
+
+[vite-plugin-svg-icons](https://github.com/vbenjs/vite-plugin-svg-icons) make it easy to manage svg icons.
+
+Add SVG files into the icons folder.
+
+```
+src/icons/
+```
+
+### Usage of SVG sprite
+
+Call the icon with ID.
+
+```html
+<svg aria-hidden="true">
+  <use href="#icon-file" />
+</svg>
+```
+
 ## PWA
 
 [Vite Plugin PWA](https://vite-plugin-pwa.netlify.app/) supports making your website faster.

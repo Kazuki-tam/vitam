@@ -4,6 +4,8 @@ import { resolve } from 'path';
 import { siteData, pagesData } from './site.config';
 import viteImagemin from 'vite-plugin-imagemin';
 import { VitePWA } from 'vite-plugin-pwa';
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
+import path from 'path';
 
 export default defineConfig({
   server: {
@@ -93,6 +95,21 @@ export default defineConfig({
       context(pagePath) {
         return pagesData[pagePath];
       },
+    }),
+    createSvgIconsPlugin({
+      // Specify the icon folder to be cached
+      iconDirs: [path.resolve(process.cwd(), 'src/icons')],
+      // Specify symbolId format
+      symbolId: 'icon-[dir]-[name]',
+      /**
+       * custom insert position
+       * @default: body-last
+       */
+      /**
+       * custom dom id
+       * @default: __svg__icons__dom__
+       */
+      customDomId: '__svg__icons__dom__',
     }),
   ],
 });
