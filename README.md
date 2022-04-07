@@ -189,7 +189,7 @@ This starter template gives you CSS architecture which is [Enduring CSS](https:/
 ### What's Enduring CSS?
 
 Enduring CSS is an architecture to write style sheets for large-scale, rapidly changing, long-lived web projects.
-You can get these bellow benefits from Enduring CSS.
+You can get these benefits from Enduring CSS.
 
 - Isolated, self-quarantining styles
 - Scale to any size
@@ -230,7 +230,7 @@ Jest is built-in in this project. You can run Jest from the command line.
 
 ## Icons
 
-[vite-plugin-svg-icons](https://github.com/vbenjs/vite-plugin-svg-icons) make it easy to manage svg icons.
+[vite-plugin--icons](https://github.com/vbenjs/vite-plugin-svg-icons) make it easy to manage SVG icons.
 
 Add SVG files into the icons folder.
 
