@@ -1,5 +1,6 @@
 // Import Base file
 import { registerSW } from 'virtual:pwa-register';
+import 'virtual:svg-icons-register';
 
 // Import SCSS
 import '/scss/site.scss';
