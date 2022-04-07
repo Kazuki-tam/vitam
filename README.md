@@ -230,7 +230,11 @@ Jest is built-in in this project. You can run Jest from the command line.
 
 ## Icons
 
-[vite-plugin--icons](https://github.com/vbenjs/vite-plugin-svg-icons) make it easy to manage SVG icons.
+<!-- textlint-disable -->
+
+[vite-plugin-svg-icons](https://github.com/vbenjs/vite-plugin-svg-icons) make it easy to manage SVG icons.
+
+<!-- textlint-enable -->
 
 Add SVG files into the icons folder.
 
