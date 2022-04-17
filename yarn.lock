@@ -1803,9 +1803,9 @@
   integrity sha512-QzSuZMBuG5u8HqYz01qtMdg/Jfctlnvj1z/lYnIDXs/golxw0fxtRAHd9KrzjR7Yxz1qVeI00o0kiO3PmVdJ9w==
 
 "@types/prettier@^2.4.2":
-  version "2.4.2"
-  resolved "https://registry.npmjs.org/@types/prettier/-/prettier-2.4.2.tgz"
-  integrity sha512-ekoj4qOQYp7CvjX8ZDBgN86w3MqQhLE1hczEJbEIjgFEumDy+na/4AJAbLXfgEWFNB2pKadM5rPFtuSGMWK7xA==
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.6.0.tgz#efcbd41937f9ae7434c714ab698604822d890759"
+  integrity sha512-G/AdOadiZhnJp0jXCaBQU449W2h716OW/EoXeYkCytxKL06X1WCXB4DZpp8TpZ8eyIJVS1cw4lrlkkSYU21cDw==
 
 "@types/resolve@1.17.1":
   version "1.17.1"
@@ -3352,10 +3352,10 @@ dom-serializer@^1.0.1:
     domhandler "^4.2.0"
     entities "^2.0.0"
 
-dom7@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.npmjs.org/dom7/-/dom7-4.0.1.tgz"
-  integrity sha512-y/RWjw3gK3qQnZz6IqDaIoqH6+xBhcB3Wsh5HFwl0abwuO/NAgbSB31ZbxtBDcuDe8jAX5NYUNDLTx4Ul48sIw==
+dom7@^4.0.2:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
+  integrity sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==
   dependencies:
     ssr-window "^4.0.0"
 
@@ -7879,9 +7879,9 @@ prettier-linter-helpers@^1.0.0:
     fast-diff "^1.1.2"
 
 prettier@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.npmjs.org/prettier/-/prettier-2.4.1.tgz"
-  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
+  integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
 
 pretty-bytes@^5.3.0, pretty-bytes@^5.6.0:
   version "5.6.0"
@@ -8765,10 +8765,10 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
-ssr-window@^4.0.0, ssr-window@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.npmjs.org/ssr-window/-/ssr-window-4.0.1.tgz"
-  integrity sha512-5q936lkCk5Lg5hM6tG8Nutdym4vNiuFSWorslTzOn71PWb3Wnx44q/k2Ryn1LWA1G4FtxMzjywUFOiOxPkVGrA==
+ssr-window@^4.0.0, ssr-window@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
+  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
 
 stable@^0.1.8:
   version "0.1.8"
@@ -9172,12 +9172,12 @@ svgo@^2.1.0, svgo@^2.8.0:
     stable "^0.1.8"
 
 swiper@^7.3.1:
-  version "7.3.1"
-  resolved "https://registry.npmjs.org/swiper/-/swiper-7.3.1.tgz"
-  integrity sha512-YHa8uI22UwF9Q6F9tCDSai7/BJo8uVHKampKYAIShlFrWoHfM+sCCn24Yeq3oqIKZv2bfSULzXKsXmh0VpCNeQ==
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-7.4.1.tgz#99fc586d1335b45250d2c6b3128dc91f8047d3e7"
+  integrity sha512-dhbL4tpYFvHug1J7GnKElfTi6EYhlZy/vNZRhHkWFyUsWZ1Vovipxj3la5gqllMogygXJMe3zvVv+f6eppvWiA==
   dependencies:
-    dom7 "^4.0.1"
-    ssr-window "^4.0.1"
+    dom7 "^4.0.2"
+    ssr-window "^4.0.2"
 
 symbol-tree@^3.2.4:
   version "3.2.4"
