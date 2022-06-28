@@ -67,7 +67,7 @@
     "typesync": "^0.8.0",
     "vite": "^2.6.4",
     "vite-plugin-handlebars": "^1.6.0",
-    "vite-plugin-imagemin": "^0.4.6",
+    "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-pwa": "^0.11.10",
     "vite-plugin-svg-icons": "^2.0.1"
   },
@@ -81,7 +81,8 @@
     "yarn": "^1.22.17"
   },
   "resolutions": {
-    "textlint-rule-no-dead-link/**/node-fetch": "^2.6.7",
-    "vite-plugin-imagemin/**/trim-newlines": "^3.0.1"
+    "vite-plugin-pwa/**/ejs": "^3.1.7",
+    "textlint-rule-ginger/**/json-schema": "^0.4.0",
+    "textlint-rule-no-dead-link/**/node-fetch": "^2.6.7"
   }
 }
