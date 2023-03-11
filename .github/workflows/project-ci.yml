@@ -27,7 +27,8 @@ jobs:
     - name: Lint Project
       run: |
         yarn install
-        yarn lint
+        yarn eslint
+        yarn checkTypes
         yarn stylelint
     - name: Test
       run: |
