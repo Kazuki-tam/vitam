@@ -26,7 +26,7 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 
 ## Requirements
 
-- [Node v16+ (16.13.0)](https://nodejs.org/en/)
+- [Node v18 (18.13.0)](https://nodejs.org/en/)
 
 ## Main Dependencies
 
@@ -78,28 +78,16 @@ Validate HTML files
 yarn htmlValidate
 ```
 
-Lint your TypeScript files
+Lint your project files
 
 ```
 yarn lint
 ```
 
-Fix your TypeScript files
+Fix your project files
 
 ```
 yarn lint:fix
-```
-
-Format your TypeScript files
-
-```
-yarn format
-```
-
-Lint and Fix SCSS files
-
-```
-yarn stylelint
 ```
 
 Install missing TypeScript typings
@@ -280,7 +268,6 @@ Check out this file before you get started with your project.
 - Slider: [Swiper](https://swiperjs.com/)
 - Modal: [Micromodal.js](https://micromodal.vercel.app/)
 - Smooth Scroll: [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-- Animation: [Tween24.js](https://github.com/a24/tween24js)
 
 <!-- textlint-enable -->
 
