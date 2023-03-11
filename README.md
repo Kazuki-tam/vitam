@@ -78,22 +78,16 @@ Validate HTML files
 yarn htmlValidate
 ```
 
-Lint your TypeScript files
+Lint your project files
 
 ```
 yarn lint
 ```
 
-Fix your TypeScript files
+Fix your project files
 
 ```
 yarn lint:fix
-```
-
-Lint and Fix SCSS files
-
-```
-yarn stylelint
 ```
 
 Install missing TypeScript typings
