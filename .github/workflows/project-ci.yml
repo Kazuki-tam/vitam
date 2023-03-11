@@ -29,7 +29,6 @@ jobs:
         yarn install
         yarn lint
         yarn stylelint
-        yarn textLint
     - name: Test
       run: |
         yarn test
