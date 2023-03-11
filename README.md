@@ -26,7 +26,7 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 
 ## Requirements
 
-- [Node v16+ (16.13.0)](https://nodejs.org/en/)
+- [Node v18 (18.13.0)](https://nodejs.org/en/)
 
 ## Main Dependencies
 
