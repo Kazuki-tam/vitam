@@ -5,10 +5,6 @@ import 'virtual:svg-icons-register';
 // Import SCSS
 import '/scss/site.scss';
 
-// Import Libraries
-import './libs/smoothScroll';
-import './libs/modal';
-
 // Import Namespace
 import sample from './namespace/sample';
 
