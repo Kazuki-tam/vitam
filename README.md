@@ -6,7 +6,7 @@ VITAM is a starter template with Vite for front-end projects. This template focu
 
 [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/releases/tag/v0.0.1)
 [![Issues](https://img.shields.io/github/issues/Kazuki-tam/vitam)](https://github.com/Kazuki-tam/vitam/issues)
-![Maintenance](https://img.shields.io/maintenance/yes/2022)
+![Maintenance](https://img.shields.io/maintenance/yes/2023)
 ![Release date](https://img.shields.io/github/release-date/Kazuki-tam/vitam)
 
 ## Features
@@ -261,15 +261,6 @@ Check out this file before you get started with your project.
 
 <!-- textlint-enable -->
 
-## Libraries
-
-<!-- textlint-disable -->
-
-- Slider: [Swiper](https://swiperjs.com/)
-- Modal: [Micromodal.js](https://micromodal.vercel.app/)
-- Smooth Scroll: [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-
-<!-- textlint-enable -->
 
 ## Configurations
 
