@@ -59,7 +59,7 @@
     "tslib": "^2.6.1",
     "typescript": "^5.1.6",
     "typesync": "^0.11.1",
-    "vite": "^4.5.2",
+    "vite": "^4.5.3",
     "vite-plugin-handlebars": "^1.6.0",
     "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-pwa": "^0.16.4",
